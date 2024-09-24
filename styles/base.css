@@ -16,8 +16,8 @@ font-family: "Roboto", sans-serif;
   */
 
 body {
-    font-family: Arial, sans-serif;
-
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
 
 .container {
@@ -33,11 +33,10 @@ body {
 }
 
 .header h1 {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
+
+    font-family: "Dela Gothic One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
 }
 
 .header {
@@ -46,7 +45,7 @@ body {
     color: white;
     padding-top: 1rem;
     text-align: center;
-    font-variant: var(--paragraph-font);
+
 }
 
 
@@ -55,6 +54,11 @@ nav {
     text-align: center;
     background: #ffffff;
     width: 800px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 }
 
 a:link {
@@ -98,7 +102,7 @@ h2 {
     padding: 5px;
     background: #670992;
     margin: 0 auto;
-    font-family: "Inria Sans", sans-serif;
+
     font-weight: 500;
     font-style: normal;
 }
