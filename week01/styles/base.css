@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*font-family: "Barlow", sans-serif;
+font-family: "Mulish", sans-serif;
+font-family: "Inria Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  */
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header  "
+        "main main "
+        "footer footer";
+
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.header {
+    grid-area: header;
+    background: #670992;
+    color: white;
+    padding-top: 1rem;
+    text-align: center;
+    font-variant: var(--paragraph-font);
+}
+
+
+nav {
+
+    text-align: center;
+    background: #ffffff;
+    width: 800px;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 1px;
+    background: #333;
+
+    margin: 0 auto;
+
+}
+
+.navigation li {
+    flex: 1 1 100%;
+
+
+}
+
+nav a:link,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+
+    background: radial-gradient(#530985fb, #7b7a7a);
+    border-width: 10px;
+    padding: 10px;
+
+}
+
+h2 {
+    padding: 5px;
+    background: #670992;
+    margin: 0 auto;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    color: #ffffff;
+
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 500px 300px;
+    gap: 0px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+
+}
+
+
+img {
+    float: right;
+
+}
+
+
+figure {
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row;
+    width: 400px;
+    margin: 0 auto;
+
+}
+
+figcaption {
+
+
+    padding: 3px;
+    text-align: center;
+}
+
+
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 4rem;
+}
+
+.main p {
+    padding-top: 10px;
+}
