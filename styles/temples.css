@@ -53,10 +53,7 @@ nav {
 
 }
 
-@media (max-width: 768px) {
-    .hamburger {
-        display: block; /* Show hamburger in mobile view */
-    }
+
 
 .menu.active {
     display: flex;
