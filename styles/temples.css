@@ -9,6 +9,7 @@
 body {
     max-width: 800px;
     margin: auto;
+
 }
 
 
@@ -17,10 +18,12 @@ body {
 
     background: #670992;
     color: white;
-    font-family: "Oswald", sans-serif;
+
 }
 
-
+h1 {
+    font-family: "Oswald", sans-serif;
+}
 
 nav {
 
@@ -37,10 +40,16 @@ nav {
     margin: 0;
     display: none;
     flex-direction: column;
+    font-family: "Manrope", sans-serif;
+
+
 }
+
+
 
 .menu li {
     margin: 10px 0;
+
 
 }
 
@@ -56,10 +65,12 @@ nav {
     display: flex;
     margin: 10px 0;
 
+
 }
 
 a:link {
     text-decoration: none;
+
 
 }
 
@@ -95,7 +106,7 @@ nav a:hover {
 
 h2 {
 
-
+    font-family: "Oswald", sans-serif;
     margin: 0 auto;
     font-weight: 500;
     font-style: normal;
