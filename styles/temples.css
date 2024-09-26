@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+
+.header {
+
+    background: #670992;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+
+
+nav {
+
+    text-align: center;
+    background: #ffffff;
+    width: 800px;
+
+
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu li {
+    margin: 10px 0;
+    display: none;
+}
+
+.burger {
+
+    list-style: none;
+    padding-right: 20px;
+
+
+}
+
+.menu.active {
+    display: flex;
+    /* Show the menu when active */
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+
+    margin: 1px;
+    background: #333;
+    margin-left: 0;
+
+
+}
+
+.navigation a {
+    flex: 1 1 100%;
+}
+
+nav a:link,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+
+    background: radial-gradient(#530985fb, #7b7a7a);
+    border-width: 10px;
+    padding: 10px;
+
+}
+
+h2 {
+
+
+    margin: 0 auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    text-align: center;
+}
+
+.main {
+    display: grid;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.temple-pics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+figure {
+
+    margin: auto;
+    width: 200px;
+    margin: auto;
+
+}
+
+figure img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+figcaption {
+
+    color: #000000;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 4rem;
+}
