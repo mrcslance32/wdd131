@@ -1,35 +1,8 @@
-document.getElementById("burger").addEventListener("click", function() {
+document.getElementById("burger").addEventListener("click", function () {
     const menu = document.getElementById("menu");
-    const isActive = menu.classList.toggle("active"); // Toggle the 'active' class
-
-    // Change the icon based on menu state
-    this.innerHTML = isActive ? '✖' : '&#9776;'; // 'X' when active, hamburger icon when not
+    const isActive = menu.classList.toggle("active");
+    this.innerHTML = isActive ? '✖' : '&#9776;';
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // dates

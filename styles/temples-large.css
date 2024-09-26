@@ -115,11 +115,8 @@ h2 {
 .temple-pics {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Create 3 equal columns */
     gap: 10px;
-    /* Space between grid items */
     max-width: 900px;
-    /* Maximum width of the grid */
     width: 100%;
     margin: 0 auto;
 }

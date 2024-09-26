@@ -35,12 +35,13 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-
+    display: none;
+    flex-direction: column;
 }
 
 .menu li {
     margin: 10px 0;
-    display: none;
+
 }
 
 .burger {
@@ -53,7 +54,8 @@ nav {
 
 .menu.active {
     display: flex;
-    /* Show the menu when active */
+    margin: 10px 0;
+
 }
 
 a:link {
