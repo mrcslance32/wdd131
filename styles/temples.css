@@ -53,13 +53,10 @@ nav {
 
 }
 
-.burger {
-
-    list-style: none;
-    padding-right: 20px;
-
-
-}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger in mobile view */
+    }
 
 .menu.active {
     display: flex;
