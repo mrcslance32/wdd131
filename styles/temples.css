@@ -154,3 +154,17 @@ figcaption {
     text-align: center;
     padding: 4rem;
 }
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .header {
+        background: #4a0072;
+        /* Change header background for small screens */
+    }
+
+
+    .temple-pics {
+        grid-template-columns: 1fr;
+        /* Display one column of images */
+    }
+}
