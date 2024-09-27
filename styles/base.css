@@ -120,6 +120,10 @@ h2 {
 
 }
 
+menu li {
+    list-style-type: none;
+}
+
 
 img {
     float: right;
