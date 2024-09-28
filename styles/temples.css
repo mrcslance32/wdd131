@@ -162,12 +162,7 @@ figcaption {
 
 
 @media (max-width: 600px) {
-    .header {
-        background: #670992;
-        height: 50px;
 
-
-    }
 
     .navigation {
         width: 90px;
