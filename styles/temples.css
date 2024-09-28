@@ -18,7 +18,8 @@ body {
 
     background: #670992;
     color: white;
-
+    height: 50px;
+    text-align: center;
 }
 
 h1 {
@@ -72,7 +73,8 @@ a:link {
     display: flex;
     list-style: none;
     padding: 10px;
-
+    width: 48px;
+    height: 40px;
     margin: 1px;
     background: #333;
     margin-left: 0;
@@ -104,6 +106,7 @@ h2 {
     margin: 0 auto;
     font-weight: 500;
     font-style: normal;
+
 }
 
 h2 {
@@ -158,10 +161,15 @@ figcaption {
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
     .header {
-        background: #4a0072;
+        background: #670992;
+        height: 50px;
+
         /* Change header background for small screens */
     }
 
+    .navigation {
+        width: 50px;
+    }
 
     .temple-pics {
         grid-template-columns: 1fr;

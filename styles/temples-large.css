@@ -156,10 +156,3 @@ figcaption {
 
 
 
-.footer {
-    grid-area: footer;
-    background: #333;
-    color: white;
-    text-align: center;
-
-}
