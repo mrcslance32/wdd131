@@ -43,7 +43,7 @@ nav {
     display: none;
     flex-direction: column;
     font-family: "Manrope", sans-serif;
-    z-index: 2; 
+    z-index: 2;
 
 
 }
@@ -52,7 +52,7 @@ nav {
 
 .menu li {
     margin: 10px 0;
-    z-index: 2; 
+    z-index: 2;
 
 }
 
@@ -61,7 +61,7 @@ nav {
 .menu.active {
     display: flex;
     margin: 10px 0;
-    z-index: 2; 
+    z-index: 2;
 
 }
 
@@ -79,13 +79,13 @@ a:link {
     margin: 1px;
     background: #333;
     margin-left: 0;
-    z-index: 2; 
-    position: relative; 
+    z-index: 2;
+    position: relative;
 }
 
 .navigation a {
     flex: 1 1 100%;
-    z-index: 2; 
+    z-index: 2;
 }
 
 nav a:link,
@@ -160,20 +160,17 @@ figcaption {
     padding: 4rem;
 }
 
-/* Media query for screens smaller than 600px */
+
 @media (max-width: 600px) {
     .header {
         background: #4a0072;
         height: 50px;
-        
-        /* Change header background for small screens */
+
+       
     }
-    .navigation{
+
+    .navigation {
         width: 90px;
     }
-   
-    .temple-pics {
-        grid-template-columns: 1fr;
-        /* Display one column of images */
-    }
+
 }
