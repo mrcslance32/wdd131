@@ -5,14 +5,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcus Lance | WDD 131</title>
-    <meta name="description" content="">
+    <meta name="description" content="WDD131 Country Page Assignment for Week03">
     <meta name="author" content="Marcus Lance">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/placecss.css">
+    <link rel="stylesheet" href="styles/placecssmobile.css">
+
+    <script src="scripts/placejs.js" defer></script>
 </head>
 
 <body>
-    <main>
-    </main>
+    <div class="container">
+
+        <header>
+            <h1>Tokyo</h1>
+
+        </header>
+
+        <main>
+            <picture>
+                <!-- mobile -->
+                <source srcset="images/tomnook.webp" media="(max-width: 700px)" width="700">
+                <!-- desktop -->
+                <source srcset="images/tanuki.webp" media="(min-width: 701px)">
+                <img src="images/hero-desktop.webp" alt="Hero Image" width="800">
+            </picture>
+
+        </main>
+
+        <footer class="footer">
+            <p> &copy; <span id="year"></span> Tokyo</p>
+            <p id="modify"></p>
+        </footer>
+    </div>
 </body>
 
 </html>
