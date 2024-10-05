@@ -81,7 +81,9 @@ header {
     content: '   ☀️';
     }
     
-
+.more-hero-text img{
+display: none;
+}
 
 .more-hero-text p {
     margin-top: 15px;
