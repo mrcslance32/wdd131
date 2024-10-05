@@ -88,6 +88,12 @@ main {
     text-align: center;
 }
 
+.more-hero-text h2::after {
+    content: '   ☀️';
+    display: none;
+}
+
+
 
 .more-hero-text p {
     margin-top: 15px;

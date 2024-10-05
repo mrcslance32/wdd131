@@ -75,31 +75,20 @@ header {
     
 }
 
-.weather {
-    position: relative;
-    /* Required for positioning the pseudo-element */
-    font-size: 2em;
-    margin-bottom: 20px;
-}
 
-.weather::after {
-    content: url(../images/weather.svg);
-    /* Content to insert */
-    position: absolute;
-    /* Positioning it relative to the title */
-    left: 220px;
-    /* Move it to the left */
-    top: -40px;
-    /* Align it vertically */
-    font-size: 1.5em;
-    /* Size of the pseudo-element */
-}
+
+.more-hero-text h2::after{
+    content: '   ☀️';
+    }
+    
 
 
 .more-hero-text p {
     margin-top: 15px;
     /* Adjust value as needed */
 }
+
+
 
 .more-hero-text {
     position: absolute;
