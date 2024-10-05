@@ -1,6 +1,53 @@
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    max-width: 1200px; /* Set max width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Inner padding */
+}
+
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 20px; /* Space below header */
+}
+
+.hero {
+    position: relative; /* Position relative for overlay */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.hero img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.hero-text {
+    position: absolute; /* Overlay text on the image */
+    top: 20%; /* Positioning */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Text color */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Padding for text */
+    border-radius: 5px; /* Rounded corners */
+    /* display: none;     for when the query is set up to switch to mobile */
+}
+
+
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 4rem;
 }
