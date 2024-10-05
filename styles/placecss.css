@@ -84,7 +84,7 @@ header {
     /* Positioning it relative to the title */
     left: 220px;
     /* Move it to the left */
-    top: -8px;
+    top: -40px;
     /* Align it vertically */
     font-size: 1.5em;
     /* Size of the pseudo-element */
