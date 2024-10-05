@@ -1,4 +1,4 @@
-.hero-text{
+.hero-text {
     color: red;
 }
 
@@ -29,15 +29,20 @@ header {
     margin-bottom: 20px;
     /* Space below header */
 
-    
+
 }
+
 main {
-    display: flex; /* Flexbox for centering */
-    flex-direction: column; 
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically if needed */
-    height: 100%; /* Optional */
-    }
+    display: flex;
+    /* Flexbox for centering */
+    flex-direction: column;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically if needed */
+    height: 100%;
+    /* Optional */
+}
 
 
 
@@ -52,15 +57,18 @@ main {
 }
 
 .hero {
-    display: grid; /* Enable Grid */
-    grid-template-rows: auto auto auto; /* Three rows for each section */
-    gap: 20px; /* Space between elements */
+    display: grid;
+    /* Enable Grid */
+    grid-template-rows: auto auto auto;
+    /* Three rows for each section */
+    gap: 20px;
+    /* Space between elements */
 }
 
 
 .hero-text {
-   
-    
+
+
     color: white;
     /* Text color */
     background: rgba(0, 0, 0, 0.5);
@@ -87,7 +95,7 @@ main {
 }
 
 .more-hero-text {
-   
+
     color: white;
     /* Text color */
     background: rgba(255, 2, 2, 0.5);
@@ -114,5 +122,3 @@ main {
     padding: 0px;
     /* Inner padding */
 }
-
-

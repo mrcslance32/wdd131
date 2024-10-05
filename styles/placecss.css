@@ -60,6 +60,8 @@ header {
     /* Padding for text */
     border-radius: 5px;
     /* Rounded corners */
+    font-size: x-large;
+    line-height: 1.2;
 }
 
 
@@ -70,6 +72,7 @@ header {
 
 .more-hero-text h2 {
     text-align: center;
+    
 }
 
 .weather {
@@ -113,6 +116,7 @@ header {
     /* Padding for text */
     border-radius: 5px;
     /* Rounded corners */
+    font-size: x-large;
 }
 
 .footer {
