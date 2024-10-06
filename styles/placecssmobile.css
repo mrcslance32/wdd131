@@ -32,19 +32,21 @@ body {
 
 header {
     text-align: center;
-    text-align: center;
     background-color: rgb(160, 5, 5);
     width: 400px;
     margin: 0 auto;
     height: 50px;
+    
 
 }
 
 h1 {
     font-family: "EB Garamond", serif;
-
+    
     color: #ecba5c;
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    
+    
     /* Shadow effect */
 }
 
