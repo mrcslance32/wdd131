@@ -12,7 +12,7 @@
 
 body {
     overflow-x: hidden;
-    
+
 }
 
 .container {
@@ -130,11 +130,11 @@ h2 {
 @media (max-width: 1200px) {
     h1 {
         font-family: "EB Garamond", serif;
-    
+
         color: #c48004;
         text-shadow: 3px 3px 5px rgb(0, 0, 0);
-      
+
     }
-    
+
 
 }
