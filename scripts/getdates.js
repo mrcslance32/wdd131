@@ -1,4 +1,5 @@
 
+// year
 const currentYear = new Date().getFullYear();
 
 const yearElement = document.getElementById('year');

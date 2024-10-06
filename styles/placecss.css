@@ -46,7 +46,7 @@ header {
 
 .hero-text {
     position: absolute;
-    top: 20%;
+    top: 220px;
     /* Adjust this value to position vertically */
     left: 10%;
     /* Adjust this value to move it to the left */
@@ -64,6 +64,10 @@ header {
     line-height: 1.2;
 }
 
+.hero-text p {
+    margin-top: 10px;
+}
+
 
 
 .hero-text h2 {
@@ -72,17 +76,17 @@ header {
 
 .more-hero-text h2 {
     text-align: center;
-    
+
 }
 
 
 
-.more-hero-text h2::after{
+.more-hero-text h2::after {
     content: '   ☀️';
-    }
-    
-.more-hero-text img{
-display: none;
+}
+
+.more-hero-text img {
+    display: none;
 }
 
 .more-hero-text p {
@@ -121,8 +125,4 @@ display: none;
 
 
 /* Media Query   ALL MOBILE SHOULD WORK IN HERE */
-@media (max-width: 1200px) {
- 
-  
-
-}
+@media (max-width: 1200px) {}
