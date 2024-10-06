@@ -27,8 +27,17 @@ body {
 header {
     text-align: center;
     /* Center header text */
-    margin-bottom: 20px;
     /* Space below header */
+    background-color: rgb(160, 5, 5);
+    height: 120px;
+}
+
+h1 {
+    font-family: "EB Garamond", serif;
+    color: #c48004;
+    font-size: 75px;
+    text-shadow: 4px 4px 6px rgb(0, 0, 0);
+    /* Shadow effect */
 }
 
 
@@ -54,36 +63,37 @@ header {
 
 .hero-text {
     position: absolute;
-    top: 220px;
+    top: 50px;
     /* Adjust this value to position vertically */
     left: 50px;
-    /* Adjust this value to move it to the left */
-    transform: translate(0, -50%);
-    /* Center it vertically */
-    color: white;
-    /* Text color */
-    background: rgba(0, 0, 0, 0.5);
+
+    background: rgba(243, 160, 6, 0.534);
     /* Semi-transparent background */
     padding: 10px;
     /* Padding for text */
-    border-radius: 5px;
+    border-radius: 20px;
     /* Rounded corners */
     font-size: x-large;
     line-height: 1.2;
+    color: white;
+    font-size: x-large;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 .hero-text p {
     margin-top: 10px;
     font-family: var(--data-font);
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
-h2{
+h2 {
     font-family: var(--heading-font);
 }
 
 .hero-text h2 {
     text-align: center;
-    
+
 }
 
 .more-hero-text h2 {
@@ -105,6 +115,7 @@ h2{
     margin-top: 15px;
     /* Adjust value as needed */
     font-family: var(--data-font);
+
 }
 
 
@@ -112,20 +123,22 @@ h2{
 .more-hero-text {
     position: absolute;
     /* Overlay text on the image */
-    top: 540px;
+    top: 520px;
     right: 50px;
-    
+
     /* Center the text */
     color: white;
     /* Text color */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(243, 160, 6, 0.534);
     /* Semi-transparent background */
     padding: 10px;
     /* Padding for text */
-    border-radius: 5px;
+    border-radius: 20px;
     /* Rounded corners */
     font-size: x-large;
-    
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+
 }
 
 .footer {
@@ -134,6 +147,7 @@ h2{
     color: white;
     text-align: center;
     padding: 4rem;
+    font-size: larger;
 }
 
 
