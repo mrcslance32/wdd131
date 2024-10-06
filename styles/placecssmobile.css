@@ -17,16 +17,13 @@
 
 body {
     overflow-x: hidden;
-    /* Prevent horizontal scroll */
+ 
 }
 
 .container {
     max-width: 800px;
-    /* Set max width */
     margin: 0 auto;
-    /* Center the container */
     padding: 0px;
-    /* Inner padding */
 }
 
 
@@ -42,45 +39,32 @@ header {
 
 h1 {
     font-family: "EB Garamond", serif;
-    
     color: #ecba5c;
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
-    
-    
-    /* Shadow effect */
 }
 
 main {
     display: flex;
-    /* Flexbox for centering */
     flex-direction: column;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically if needed */
     height: 100%;
-    /* Optional */
+
 }
 
 
 
 .hero picture {
     width: 400px;
-    /* Make image responsive */
     height: auto;
-    /* Maintain aspect ratio */
     display: flex;
-    /* Remove extra space below image */
     margin: 0;
 }
 
 .hero {
     display: grid;
-    /* Enable Grid */
     grid-template-rows: auto auto auto;
-    /* Three rows for each section */
     gap: 10px;
-    /* Space between elements */
 }
 
 h2 {
@@ -88,16 +72,10 @@ h2 {
 }
 
 .hero-text {
-
-
     color: white;
-    /* Text color */
     background: rgba(107, 72, 7, 0.849);
-    /* Semi-transparent background */
     padding: 10px;
-    /* Padding for text */
     border-radius: 15px;
-    /* Rounded corners */
     text-align: center;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-family: var(--data-font);
@@ -119,35 +97,25 @@ h2 {
 
 .more-hero-text {
     text-align: center;
-    /* Center the text and inline elements */
 }
 
 .more-hero-text img {
     display: inline-block;
-    /* Treat the image as an inline element */
-
-    /* Ensure the image is responsive */
     height: auto;
     width: 100px;
-    /* Maintain aspect ratio */
 }
 
 
 .more-hero-text p {
     margin-top: 15px;
-    /* Adjust value as needed */
 }
 
 .more-hero-text {
 
     color: white;
-    /* Text color */
     background-color: rgb(121, 6, 6);
-    /* Semi-transparent background */
     padding: 10px;
-    /* Padding for text */
     border-radius: 15px;
-    /* Rounded corners */
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     margin-bottom: 10px;
 }
@@ -161,12 +129,7 @@ h2 {
     text-align: center;
     padding: 4rem;
     width: 400px;
-
-    /* Set max width */
     margin: 0 auto;
-    /* Center the container */
     padding: 0px;
-    /* Inner padding */
     height: 50px;
-
 }
