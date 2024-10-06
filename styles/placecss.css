@@ -48,7 +48,7 @@ header {
     position: absolute;
     top: 220px;
     /* Adjust this value to position vertically */
-    left: 10%;
+    left: 50px;
     /* Adjust this value to move it to the left */
     transform: translate(0, -50%);
     /* Center it vertically */
@@ -99,9 +99,9 @@ header {
 .more-hero-text {
     position: absolute;
     /* Overlay text on the image */
-    top: 650px;
-    right: 0px;
-    transform: translate(-50%, -50%);
+    top: 540px;
+    right: 50px;
+    
     /* Center the text */
     color: white;
     /* Text color */
