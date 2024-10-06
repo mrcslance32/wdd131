@@ -43,7 +43,7 @@ header {
 h1 {
     font-family: "EB Garamond", serif;
 
-    color: #c48004;
+    color: #ecba5c;
     text-shadow: 3px 3px 5px rgb(0, 0, 0);
     /* Shadow effect */
 }
@@ -90,14 +90,14 @@ h2 {
 
     color: white;
     /* Text color */
-    background: rgba(243, 160, 6, 0.534);
+    background: rgba(107, 72, 7, 0.849);
     /* Semi-transparent background */
     padding: 10px;
     /* Padding for text */
     border-radius: 15px;
     /* Rounded corners */
     text-align: center;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
     font-family: var(--data-font);
 }
 
@@ -140,13 +140,13 @@ h2 {
 
     color: white;
     /* Text color */
-    background-color: rgba(160, 5, 5, 0.678);
+    background-color: rgb(121, 6, 6);
     /* Semi-transparent background */
     padding: 10px;
     /* Padding for text */
     border-radius: 15px;
     /* Rounded corners */
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     margin-bottom: 10px;
 }
 

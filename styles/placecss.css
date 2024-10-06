@@ -24,13 +24,13 @@ body {
 
 header {
     text-align: center;
-    background-color: rgb(160, 5, 5);
+    background-color: rgb(121, 6, 6);
     height: 120px;
 }
 
 h1 {
     font-family: "EB Garamond", serif;
-    color: #c48004;
+    color: #ecba5c;
     font-size: 75px;
     text-shadow: 4px 4px 6px rgb(0, 0, 0);
 
@@ -58,7 +58,7 @@ h1 {
     top: 50px;
     left: 50px;
 
-    background: rgba(243, 160, 6, 0.534);
+    background: rgba(107, 72, 7, 0.849);
     padding: 10px;
     border-radius: 20px;
     font-size: x-large;
@@ -110,7 +110,7 @@ h2 {
     top: 520px;
     right: 50px;
     color: white;
-    background: rgba(243, 160, 6, 0.534);
+    background: rgba(107, 72, 7, 0.849);
     padding: 10px;
     border-radius: 20px;
     font-size: x-large;
