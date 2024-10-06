@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+
+    --heading-font: "Kalam", cursive;
+    --data-font: "Slabo 27px", serif;
+}
+
 body {
     overflow-x: hidden;
     /* Prevent horizontal scroll */
@@ -24,6 +30,8 @@ header {
     margin-bottom: 20px;
     /* Space below header */
 }
+
+
 
 .hero {
     position: relative;
@@ -66,12 +74,16 @@ header {
 
 .hero-text p {
     margin-top: 10px;
+    font-family: var(--data-font);
 }
 
-
+h2{
+    font-family: var(--heading-font);
+}
 
 .hero-text h2 {
     text-align: center;
+    
 }
 
 .more-hero-text h2 {
@@ -92,6 +104,7 @@ header {
 .more-hero-text p {
     margin-top: 15px;
     /* Adjust value as needed */
+    font-family: var(--data-font);
 }
 
 
@@ -105,13 +118,14 @@ header {
     /* Center the text */
     color: white;
     /* Text color */
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     /* Semi-transparent background */
     padding: 10px;
     /* Padding for text */
     border-radius: 5px;
     /* Rounded corners */
     font-size: x-large;
+    
 }
 
 .footer {
