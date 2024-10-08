@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,11 +6,7 @@
 }
 
 
-body {
-    max-width: 800px;
-    margin: auto;
 
-}
 
 
 
@@ -20,14 +14,19 @@ body {
 
     background: #670992;
     color: white;
-    height: 50px;
-    text-align: center;
-
-}
-
-h1 {
     font-family: "Oswald", sans-serif;
+
 }
+
+.burger {
+
+    list-style: none;
+    display: none;
+    padding: 0;
+
+
+}
+
 
 nav {
 
@@ -42,52 +41,39 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
-    flex-direction: column;
+    display: flex;
     font-family: "Manrope", sans-serif;
-    z-index: 2;
-
-
 }
-
-
 
 .menu li {
-    margin: 10px 0;
-    z-index: 2;
-
-}
-
-
-
-.menu.active {
-    display: flex;
-    margin: 10px 0;
-    z-index: 2;
-
+    margin-right: 75px;
+    padding-left: 50px;
 }
 
 a:link {
     text-decoration: none;
 
-
 }
 
 .navigation {
-    display: flex;
-    list-style: none;
+
+
     padding: 10px;
-    width: 95px;
-    margin: 1px;
+
+    margin: 0 auto;
     background: #333;
-    margin-left: 0;
-    z-index: 2;
-    position: relative;
+
+
+}
+
+h1 {
+    text-align: center;
 }
 
 .navigation a {
     flex: 1 1 100%;
-    z-index: 2;
+
+
 }
 
 nav a:link,
@@ -108,28 +94,34 @@ h2 {
 
     font-family: "Oswald", sans-serif;
     margin: 0 auto;
+
     font-weight: 500;
     font-style: normal;
 }
 
 h2 {
+
     text-align: center;
 }
 
 .main {
     display: grid;
+    gap: 0px;
     max-width: 800px;
     margin: 0 auto;
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
 }
 
 .temple-pics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    max-width: 600px;
+    max-width: 900px;
     width: 100%;
     margin: 0 auto;
-    z-index: 1;
 }
 
 
@@ -138,13 +130,6 @@ figure {
     margin: auto;
     width: 200px;
     margin: auto;
-
-}
-
-figure img {
-
-    max-width: 100%;
-    height: auto;
 
 }
 
@@ -162,12 +147,12 @@ figcaption {
     padding: 4rem;
 }
 
-
-@media (max-width: 600px) {
-
-
-    .navigation {
-        width: 90px;
-    }
-
+.main p {
+    padding-top: 10px;
 }
+
+
+
+
+
+
