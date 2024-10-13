@@ -175,7 +175,8 @@ body {
 
 
 .temple-card img {
-    max-width: auto;
+    width: 190px;
+    height: 150px;
     margin-top: auto;
     /* Push the image to the bottom */
     
