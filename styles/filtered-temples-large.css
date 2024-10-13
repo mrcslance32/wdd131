@@ -141,7 +141,7 @@ body {
     border-radius: 5px;
     margin: 10px;
     padding: 15px;
-    width: 220px;
+    width: 225px;
 
     display: flex;
     /* Enable flexbox */
@@ -176,8 +176,7 @@ body {
 
 
 .temple-card img {
-    width: 190px;
-    height: 150px;
+
     margin-top: auto;
     /* Push the image to the bottom */
 
@@ -185,6 +184,10 @@ body {
     /* Adjust values for desired shadow */
     border-radius: 10px;
     /* Rounded edges */
+    max-width: 100%;
+    /* Image will not exceed the container width */
+    height: auto;
+    /* Maintain aspect ratio */
 
 }
 
