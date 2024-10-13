@@ -108,48 +108,47 @@ const temples = [
   },
 
 
-  // Add more temple objects here...
 ];
 
 //cards
 
 
-// filter
+// filter stuff
 
 
 
-// Filter for temples built before 1900 (Old)
+// Old
 const oldTemples = temples.filter(temple => {
   const dedicatedYear = parseInt(temple.dedicated.split(',')[0], 10);
   return dedicatedYear < 1900;
 });
 
-// Filter for temples built after 2000 (New)
+//  New
 const newTemples = temples.filter(temple => {
   const dedicatedYear = parseInt(temple.dedicated.split(',')[0], 10);
   return dedicatedYear > 2000;
 });
 
-// Filter for temples larger than 90,000 square feet (Large)
+// Large
 const largeTemples = temples.filter(temple => temple.area > 90000);
 
-// Filter for temples smaller than 10,000 square feet (Small)
+// Small
 const smallTemples = temples.filter(temple => temple.area < 10000);
 
-// Home - displays all the temples stored in the array
-const allTemples = temples; // This is the original array containing all temples
+// Home 
+const allTemples = temples;
 
 
-// array
+
 const templeContainer = document.getElementById('temple-container');
 
-// 
 
 
-// Function to display temples in the container
+
+
 function displayTemples(templeArray) {
   const templeContainer = document.getElementById('temple-container');
-  templeContainer.innerHTML = ''; // Clear existing content
+  templeContainer.innerHTML = '';
 
   templeArray.forEach(temple => {
     const templeCard = document.createElement('div');
@@ -167,37 +166,38 @@ function displayTemples(templeArray) {
   });
 }
 
-// old
+// old button
 document.getElementById('old').addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default link behavior
-  displayTemples(oldTemples); // Show temples dedicated after 2000
+  event.preventDefault(); // 
+  displayTemples(oldTemples);
 });
 
 
 
-// Event listener for the "New" link
+// new button
 document.getElementById('new').addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default link behavior
-  displayTemples(newTemples); // Show temples dedicated after 2000
+  event.preventDefault();
+  displayTemples(newTemples);
 });
 
-// large
+// large button
 document.getElementById('large').addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default link behavior
-  displayTemples(largeTemples); // Show temples dedicated after 2000
+  event.preventDefault();
+  displayTemples(largeTemples);
 });
 
-// small
+// small button
 document.getElementById('small').addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default link behavior
-  displayTemples(smallTemples); // Show temples dedicated after 2000
+  event.preventDefault();
+  displayTemples(smallTemples);
 });
 
+
+// home button
 document.getElementById('home').addEventListener('click', (event) => {
-  event.preventDefault(); // Prevent default link behavior
-  displayTemples(allTemples); // Show temples dedicated after 2000
+  event.preventDefault();
+  displayTemples(allTemples);
 });
 
 
-// Initial display of all temples
 displayTemples(allTemples);
