@@ -3,52 +3,73 @@
     padding: 0;
     box-sizing: border-box;
     background: var(--background-color);
-   
+
 }
 
-:root{
+:root {
     --heading-font: "Holtwood One SC", serif;
     --accent-font: "Rock Salt", cursive;
-    --primary-color: #000179 /* dark blue*/;
-    --secondary-color: #f1ca14 /* dark yellow */;
-    --background-color: #cbcaca /* almost white */;
-    --accent-color: #0433f9;    /* bright blue */
-    --highlight-color: #fff203; /*bright yellow*/
- 
+    --primary-color: #000179
+        /* dark blue*/
+    ;
+    --secondary-color: #f1ca14
+        /* dark yellow */
+    ;
+    --background-color: #cbcaca
+        /* almost white */
+    ;
+    --accent-color: #0433f9;
+    /* bright blue */
+    --highlight-color: #ffd900;
+    /*bright yellow*/
+
 }
 
 
 
-h1{
+h1 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    text-shadow: 2px 2px 8px #fff203;
+    text-shadow:
+        1px 1px #ffd900,
+        1px 1px #ffd900,
+        1px 2px 6px #ffd900,
+        2px 2px 4px #ffffff;
+
 }
 
-h2,h3{
+h2,
+h3 {
     font-family: var(--accent-font);
 }
 
-h3{
+h3 {
     color: var(--accent-color);
     text-shadow: 2px 2px 2px #f1ca14;
 }
 
-h2{
+h2 {
     color: var(--highlight-color);
-    text-shadow: 2px 2px 8px#000179;
+    text-shadow:
+        1px 1px #000179,
+        2px 2px #000179,
+        3px 3px 5px #000179,
+        2px 6px 8px #000179;
+
 }
 
 
 .item1 {
     color: var(--background-color);
-    font-size: 30px; /* Adjust the font size */
-   
-    text-shadow: 
-        -1px -1px 0 black,  
+    font-size: 30px;
+    /* Adjust the font size */
+
+    text-shadow:
+        -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,
-        1px 1px 0 black; /* Creates a black outline */
+        1px 1px 0 black;
+    /* Creates a black outline */
 }
 
 .item2 {
