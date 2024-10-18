@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--background-color);
+   
+}
+
+:root{
+    --heading-font: "Holtwood One SC", serif;
+    --accent-font: "Rock Salt", cursive;
+    --primary-color: #000179 /* dark blue*/;
+    --secondary-color: #f1ca14 /* dark yellow */;
+    --background-color: #cbcaca /* almost white */;
+    --accent-color: #0433f9;    /* bright blue */
+    --highlight-color: #fff203; /*bright yellow*/
+ 
+}
+
+
+
+h1{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-shadow: 2px 2px 8px #fff203;
+}
+
+h2,h3{
+    font-family: var(--accent-font);
+}
+
+h3{
+    color: var(--accent-color);
+    text-shadow: 2px 2px 2px #f1ca14;
+}
+
+h2{
+    color: var(--highlight-color);
+    text-shadow: 2px 2px 8px#000179;
+}
+
+
+.item1 {
+    color: var(--background-color);
+    font-size: 30px; /* Adjust the font size */
+   
+    text-shadow: 
+        -1px -1px 0 black,  
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; /* Creates a black outline */
+}
+
+.item2 {
+    color: black;
+}
+
+.item3 {
+    color: #000179;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* colors */
+/* blue: rgba(0, 1, 121, 255) #000179 darker yellow: #f1ca14 bright blue: #0433f9 bright yellow: #fff203 purple: #5722ac grey blue: #2f4973 Almost black: #060505 */
+
+
+
+
+
+/* fonts */
+/* 
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Notable&family=Rock+Salt&display=swap" rel="stylesheet">.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.holtwood-one-sc-regular {
+    font-family: "Holtwood One SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.notable-regular {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} */
