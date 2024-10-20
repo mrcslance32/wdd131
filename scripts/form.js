@@ -55,8 +55,11 @@ products.forEach(product => {
     productSelect.appendChild(option); // Add the option to the select element
 });
 
-  // Function to handle form submission
-  function handleSubmit() {
+
+function handleSubmit(event) {
+    // Prevent default form submission
+    event.preventDefault();
+
     // Get current review count from localStorage
     let reviewCount = localStorage.getItem('reviewCount');
     reviewCount = reviewCount ? parseInt(reviewCount) : 0;
@@ -65,10 +68,10 @@ products.forEach(product => {
     reviewCount += 1;
     localStorage.setItem('reviewCount', reviewCount);
 
-    // Display review count
-    document.getElementById('reviewCount').textContent = `Number of reviews submitted: ${reviewCount}`;
-    return true; // Allow form submission
+    // Redirect to review.html after submission
+    window.location.href = 'review.html';
 }
+
 
  // Display the current review count when the page loads
  window.onload = function () {

@@ -10,33 +10,22 @@
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
-<body>
-    <p id="reviewMessage"></p>
 
+<body>
+    <main>
+        <p id="reviewCount"></p>
+    </main>
     <footer class="footer">
         <p> &copy; <span id="year"></span> Marcus Lance Boise, ID US</p>
         <p id="modify"></p>
     </footer>
-    </div>
     <script>
-        // Function to get URL parameters
-        function getUrlParameter(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(name);
-        }
-
-        // Get review count from URL
-        const reviewCount = getUrlParameter('count');
-        const reviewMessage = document.getElementById('reviewMessage');
-
-        if (reviewCount) {
-            reviewMessage.textContent = `You have submitted ${reviewCount} review(s).`;
-        } else {
-            reviewMessage.textContent = `Your review has been submitted successfully.`;
-        }
-
-        // Set the current year
-        document.getElementById('year').textContent = new Date().getFullYear();
+        window.onload = function () {
+            let reviewCount = localStorage.getItem('reviewCount');
+            reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+            document.getElementById('reviewCount').textContent = `Number of reviews submitted: ${reviewCount}`;
+        };
     </script>
 </body>
+
 </html>
