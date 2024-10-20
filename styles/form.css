@@ -20,7 +20,7 @@ header{
 }
 
 h1{
-    font-family: var(--data-font);
+    font-family: var(--heading-font);
     color: aliceblue;
     
 }
@@ -182,15 +182,14 @@ input[type="text"] {
 
 
 .submit-button {
-    font-family: 'Arial', sans-serif; /* Change to your desired font */
-    font-size: 16px; /* Set the size of the font */
+    font-family: var(--data-font); /* Change to your desired font */
+    font-size: 50px; /* Set the size of the font */
     font-weight: bold; /* Make the font bold, if desired */
     color: white; /* Set the text color */
     background-color: blue; /* Set the background color */
-    padding: 10px 20px; /* Add some padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Add rounded corners */
-    cursor: pointer; /* Change cursor on hover */
+    padding: 50px; /* Add some padding */
+    
+  
 }
 
 
