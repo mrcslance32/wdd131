@@ -9,78 +9,86 @@
 
     --heading-font: "Kalam", cursive;
     --data-font: "Slabo 27px", serif;
-  
+
 }
 
-header{
+header {
     text-align: center;
     background-color: black;
     padding: 1rem;
-    
+
 }
 
-h1{
+h1 {
     font-family: var(--heading-font);
     color: aliceblue;
-    
+
 }
 
-label{
+label {
     font-size: larger;
     font-family: var(--data-font);
     margin-left: 30px;
 }
 
 
-fieldset{
+fieldset {
     background-color: rgba(52, 61, 61, 0.194);
     border: 1px solid #ccc;
-        
+
 }
 
 .product {
-padding-top: 15px;
+    padding-top: 15px;
 
 }
 
 .product fieldset {
-    border: 1px solid #ccc; /* Style the fieldset border */
-    padding-bottom: 20px; /* Add padding inside the fieldset */
+    border: 1px solid #ccc;
+    /* Style the fieldset border */
+    padding-bottom: 20px;
+    /* Add padding inside the fieldset */
     padding-top: 15px;
 }
 
 .product label {
-    font-family: --data-font;/* Change label font */
+    font-family: var(--data-font);
     font-size: larger;
-    margin-bottom: 10px; /* Space between label and select */
+    margin-bottom: 10px;
+    /* Space between label and select */
     margin-left: 30px;
-    
+
 }
 
 #product {
     width: 90%;
     margin-left: 50px;
-    font-size: 14px; /* Set the size of the font */
-    padding: 10px; /* Add padding */
+    font-size: 14px;
+    /* Set the size of the font */
+    padding: 10px;
+    /* Add padding */
 
 }
 
 #product option {
-    padding: 10px; /* Add padding for options (limited control) */
+    padding: 10px;
+    /* Add padding for options (limited control) */
 }
 
 .rating {
-    display: flex; /* Enable flexbox */
-    align-items: center; /* Center items vertically */
+    display: flex;
+    /* Enable flexbox */
+    align-items: center;
+    /* Center items vertically */
 }
 
-.rating{
+.rating {
     margin-top: 18px;
     margin-bottom: 25px;
-   
+
 }
 
-.rating label{
+.rating label {
     position: relative;
     bottom: 5px;
     right: 20px;
@@ -97,76 +105,92 @@ input[type="radio"] {
 
 
 .date fieldset {
-    border: 1px solid #ccc; /* Style the fieldset border */
-    padding-bottom: 20px; /* Add padding inside the fieldset */
+    border: 1px solid #ccc;
+    /* Style the fieldset border */
+    padding-bottom: 20px;
+    /* Add padding inside the fieldset */
     padding-top: 15px;
-    
+
 
 }
 
 .date label {
-    font-family: --data-font;/* Change label font */
-    font-size: larger;
-    margin-bottom: 10px; /* Space between label and select */
-    
-    
+    font-family: var(--data-font)
+        /* Change label font */
+        font-size: larger;
+    margin-bottom: 10px;
+    /* Space between label and select */
+
+
 }
 
 input[type="date"] {
- 
-    font-size: 16px; /* Font size for the input */
-    padding: 16px; /* Padding inside the input */
-    border: 1px solid #ccc; /* Border for the input */
-    border-radius: 5px; /* Rounded corners */
-    width: 77.5%; /* Full width */
-    box-sizing: border-box; /* Include padding in width */
+
+    font-size: 16px;
+    /* Font size for the input */
+    padding: 16px;
+    /* Padding inside the input */
+    border: 1px solid #ccc;
+    /* Border for the input */
+    border-radius: 5px;
+    /* Rounded corners */
+    width: 77.5%;
+    /* Full width */
+    box-sizing: border-box;
+    /* Include padding in width */
     margin-left: 30px;
 }
 
 
-.feature fieldset{
+.feature fieldset {
     width: 100%;
     padding-top: 5rem;
-    
+
 }
 
-.feature label{
+.feature label {
     position: relative;
     bottom: 50px;
     width: 100%;
 }
 
-.feature input{
+.feature input {
     position: relative;
     right: 550px;
     top: 25px;
     width: 100%;
 }
 
-.review fieldset{
+.review fieldset {
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
 }
 
-textarea{
-    padding: 10px; /* Optional padding for better appearance */
-    font-size: 16px; /* Font size for the text */
-    border:  #ccc; /* Border styling */
-    
+textarea {
+    padding: 10px;
+    /* Optional padding for better appearance */
+    font-size: 16px;
+    /* Font size for the text */
+    border: #ccc;
+    /* Border styling */
+
 }
 
-.name fieldset{
+.name fieldset {
     padding-top: 1rem;
     padding-bottom: 1rem;
 
 }
 
 input[type="text"] {
-    padding: 10px; /* Optional padding for better appearance */
-    font-size: 16px; /* Font size for the text */
-    border:  #ccc; /* Border styling */
-    
+    padding: 10px;
+    /* Optional padding for better appearance */
+    font-size: 16px;
+    /* Font size for the text */
+    border: #ccc;
+    /* Border styling */
+
 }
 
 
@@ -182,14 +206,20 @@ input[type="text"] {
 
 
 .submit-button {
-    font-family: var(--data-font); /* Change to your desired font */
-    font-size: 50px; /* Set the size of the font */
-    font-weight: bold; /* Make the font bold, if desired */
-    color: white; /* Set the text color */
-    background-color: blue; /* Set the background color */
-    padding: 50px; /* Add some padding */
-    
-  
+    font-family: var(--data-font);
+    /* Change to your desired font */
+    font-size: 50px;
+    /* Set the size of the font */
+    font-weight: bold;
+    /* Make the font bold, if desired */
+    color: white;
+    /* Set the text color */
+    background-color: blue;
+    /* Set the background color */
+    padding: 50px;
+    /* Add some padding */
+
+
 }
 
 
