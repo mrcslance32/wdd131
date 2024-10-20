@@ -17,7 +17,7 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form method="get" action="review.html">
+        <form method="get" action="review.html" onsubmit="return handleSubmit(event)">
 
             <!-- Product -->
             <fieldset>
@@ -81,7 +81,7 @@
             <fieldset>
                 <label for="name">Your name (optional)</label>
                 <br>
-                <textarea id="review" name="review" rows="4" cols="50"></textarea>
+                <input type="text">
             </fieldset>
 
             <!-- submit -->
@@ -91,6 +91,7 @@
 
 
         </form>
+
 
 
     </main>

@@ -15,8 +15,7 @@ if (modifiedElement) {
 // dates end
 
 
-// form stuff
-
+// Names
 const products = [
     {
         id: "fc-1888",
@@ -55,3 +54,25 @@ products.forEach(product => {
     option.textContent = product.name; // Set the display text to the product name
     productSelect.appendChild(option); // Add the option to the select element
 });
+
+  // Function to handle form submission
+  function handleSubmit() {
+    // Get current review count from localStorage
+    let reviewCount = localStorage.getItem('reviewCount');
+    reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+
+    // Increment review count
+    reviewCount += 1;
+    localStorage.setItem('reviewCount', reviewCount);
+
+    // Display review count
+    document.getElementById('reviewCount').textContent = `Number of reviews submitted: ${reviewCount}`;
+    return true; // Allow form submission
+}
+
+ // Display the current review count when the page loads
+ window.onload = function () {
+    let reviewCount = localStorage.getItem('reviewCount');
+    reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+    document.getElementById('reviewCount').textContent = `Number of reviews submitted: ${reviewCount}`;
+};
