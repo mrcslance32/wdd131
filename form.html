@@ -23,30 +23,26 @@
             <fieldset>
                 <label>Product Name</label>
                 <br>
-                <select id="browser" name="browser">
-                    <!-- need to get the default option here -->
-                    <option value="">Choose a Product</option>
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="safari">Safari</option>
-                    <option value="edge">Edge</option>
-                    <option value="brave">Brave</option>
-                    <option value="other">Other</option>
-                </select>
+                <select name="product" id="product" required>
+                    <option value="" selected disabled>Choose a Product</option>
+                    <br>
             </fieldset>
 
             <!-- rating -->
             <fieldset>
                 <label>Overall Rating</label>
                 <br>
-                <input type="radio" id="family-raft" name="family-raft" value="family-raft">
-                <label for="family-raft">Family Package </label><br>
-                <input type="radio" id="fun-rafting" name="fun-rafting" value="fun-rafting">
-                <label for="fun-rafting">Fun Package </label><br>
-                <input type="radio" id="adventure-package" name="adventure-package" value="adventure-package">
-                <label for="adventure-package">Adventure Package</label><br>
-                <input type="radio" id="rapid" name="rapid" value="rapid">
-                <label for="rapid">Rapid Rapids</label>
+                <input type="radio" id="star5" name="rating" value="1" required>
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="2" required>
+                <label for="star4">★★</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">★★★</label>
+                <input type="radio" id="star2" name="rating" value="4" required>
+                <label for="star2">★★★★</label>
+                <input type="radio" id="star1" name="rating" value="5" required>
+                <label for="star1">★★★★★</label>
+
             </fieldset>
 
             <!-- date -->
@@ -59,33 +55,32 @@
                 <label>Which features did you find useful in the product? (check all that apply)</label>
                 <br>
                 <label>
-                    <input type="checkbox" name="fruits" value="apple"> Apple
+                    <input type="checkbox" name="feature" value="durability"> Durability
                 </label><br>
                 <label>
-                    <input type="checkbox" name="fruits" value="banana"> Banana
+                    <input type="checkbox" name="feature" value="use"> Ease of Use
                 </label><br>
                 <label>
-                    <input type="checkbox" name="fruits" value="orange"> Orange
+                    <input type="checkbox" name="feature" value="performance"> Performance
                 </label><br>
                 <label>
-                    <input type="checkbox" name="fruits" value="grape"> Grape
-                </label><br>
-                <label>
-                    <input type="checkbox" name="fruits" value="kiwi"> Kiwi
+                    <input type="checkbox" name="feature" value="Design"> Design
                 </label><br>
             </fieldset>
 
             <!-- written Review -->
 
             <fieldset>
-                <label>Written Review (Optional)</label>
-                <input type="review" name="review">
+                <label for="review">Your Review (optional)</label>
+                <br>
+                <textarea id="review" name="review" rows="4" cols="50"></textarea>
             </fieldset>
 
             <!-- Name -->
             <fieldset>
-                <label>Your name (Optional)</label>
-                <input type="name" name="name">
+                <label for="name">Your name (optional)</label>
+                <br>
+                <textarea id="review" name="review" rows="4" cols="50"></textarea>
             </fieldset>
 
             <!-- submit -->
