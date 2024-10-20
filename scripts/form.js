@@ -44,37 +44,36 @@ const products = [
     }
 ];
 
-// Get the select element
+// new function stuff
 const productSelect = document.getElementById('product');
 
-// Populate the select options
+
 products.forEach(product => {
     const option = document.createElement('option');
-    option.value = product.id; // Set the value to the product ID
-    option.textContent = product.name; // Set the display text to the product name
-    productSelect.appendChild(option); // Add the option to the select element
+    option.value = product.id;
+    option.textContent = product.name;
+    productSelect.appendChild(option);
 });
 
 
 function handleSubmit(event) {
-    // Prevent default form submission
+
     event.preventDefault();
 
-    // Get current review count from localStorage
     let reviewCount = localStorage.getItem('reviewCount');
     reviewCount = reviewCount ? parseInt(reviewCount) : 0;
 
-    // Increment review count
+
     reviewCount += 1;
     localStorage.setItem('reviewCount', reviewCount);
 
-    // Redirect to review.html after submission
+
     window.location.href = 'review.html';
 }
 
 
- // Display the current review count when the page loads
- window.onload = function () {
+
+window.onload = function () {
     let reviewCount = localStorage.getItem('reviewCount');
     reviewCount = reviewCount ? parseInt(reviewCount) : 0;
     document.getElementById('reviewCount').textContent = `Number of reviews submitted: ${reviewCount}`;

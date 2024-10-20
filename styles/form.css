@@ -45,9 +45,7 @@ fieldset {
 
 .product fieldset {
     border: 1px solid #ccc;
-    /* Style the fieldset border */
     padding-bottom: 20px;
-    /* Add padding inside the fieldset */
     padding-top: 15px;
 }
 
@@ -55,7 +53,6 @@ fieldset {
     font-family: var(--data-font);
     font-size: larger;
     margin-bottom: 10px;
-    /* Space between label and select */
     margin-left: 30px;
 
 }
@@ -64,22 +61,17 @@ fieldset {
     width: 90%;
     margin-left: 50px;
     font-size: 14px;
-    /* Set the size of the font */
     padding: 10px;
-    /* Add padding */
 
 }
 
 #product option {
     padding: 10px;
-    /* Add padding for options (limited control) */
 }
 
 .rating {
     display: flex;
-    /* Enable flexbox */
     align-items: center;
-    /* Center items vertically */
 }
 
 .rating {
@@ -106,38 +98,26 @@ input[type="radio"] {
 
 .date fieldset {
     border: 1px solid #ccc;
-    /* Style the fieldset border */
     padding-bottom: 20px;
-    /* Add padding inside the fieldset */
     padding-top: 15px;
 
 
 }
 
 .date label {
-    font-family: var(--data-font)
-        /* Change label font */
-        font-size: larger;
+    font-family: var(--data-font);
+    font-size: larger;
     margin-bottom: 10px;
-    /* Space between label and select */
-
-
 }
 
 input[type="date"] {
 
     font-size: 16px;
-    /* Font size for the input */
     padding: 16px;
-    /* Padding inside the input */
     border: 1px solid #ccc;
-    /* Border for the input */
     border-radius: 5px;
-    /* Rounded corners */
     width: 77.5%;
-    /* Full width */
     box-sizing: border-box;
-    /* Include padding in width */
     margin-left: 30px;
 }
 
@@ -169,11 +149,8 @@ input[type="date"] {
 
 textarea {
     padding: 10px;
-    /* Optional padding for better appearance */
     font-size: 16px;
-    /* Font size for the text */
     border: #ccc;
-    /* Border styling */
 
 }
 
@@ -185,40 +162,19 @@ textarea {
 
 input[type="text"] {
     padding: 10px;
-    /* Optional padding for better appearance */
     font-size: 16px;
-    /* Font size for the text */
     border: #ccc;
-    /* Border styling */
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .submit-button {
     font-family: var(--data-font);
-    /* Change to your desired font */
     font-size: 50px;
-    /* Set the size of the font */
     font-weight: bold;
-    /* Make the font bold, if desired */
     color: white;
-    /* Set the text color */
-    background-color: blue;
-    /* Set the background color */
+    background-color: rgb(53, 53, 78);
     padding: 50px;
-    /* Add some padding */
-
 
 }
 
