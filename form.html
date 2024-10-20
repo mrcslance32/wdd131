@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Lance | WDD 131| </title>
+    <meta name="description" content="">
+    <meta name="author" content="Marcus Lance">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+
+            <!-- Product -->
+            <fieldset>
+                <label>Product Name</label>
+                <br>
+                <select id="browser" name="browser">
+                    <!-- need to get the default option here -->
+                    <option value="">Choose a Product</option>
+                    <option value="chrome">Chrome</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <!-- rating -->
+            <fieldset>
+                <label>Overall Rating</label>
+                <br>
+                <input type="radio" id="family-raft" name="family-raft" value="family-raft">
+                <label for="family-raft">Family Package </label><br>
+                <input type="radio" id="fun-rafting" name="fun-rafting" value="fun-rafting">
+                <label for="fun-rafting">Fun Package </label><br>
+                <input type="radio" id="adventure-package" name="adventure-package" value="adventure-package">
+                <label for="adventure-package">Adventure Package</label><br>
+                <input type="radio" id="rapid" name="rapid" value="rapid">
+                <label for="rapid">Rapid Rapids</label>
+            </fieldset>
+
+            <!-- date -->
+            <fieldset>
+                <label>Date of Installation<input type="date" name="completeDate"></label>
+            </fieldset>
+
+            <!-- features -->
+            <fieldset>
+                <label>Which features did you find useful in the product? (check all that apply)</label>
+                <br>
+                <label>
+                    <input type="checkbox" name="fruits" value="apple"> Apple
+                </label><br>
+                <label>
+                    <input type="checkbox" name="fruits" value="banana"> Banana
+                </label><br>
+                <label>
+                    <input type="checkbox" name="fruits" value="orange"> Orange
+                </label><br>
+                <label>
+                    <input type="checkbox" name="fruits" value="grape"> Grape
+                </label><br>
+                <label>
+                    <input type="checkbox" name="fruits" value="kiwi"> Kiwi
+                </label><br>
+            </fieldset>
+
+            <!-- written Review -->
+
+            <fieldset>
+                <label>Written Review (Optional)</label>
+                <input type="review" name="review">
+            </fieldset>
+
+            <!-- Name -->
+            <fieldset>
+                <label>Your name (Optional)</label>
+                <input type="name" name="name">
+            </fieldset>
+
+            <!-- submit -->
+            <input type="submit" value="Post Review">
+
+
+
+
+        </form>
+
+
+    </main>
+
+    <footer class="footer">
+        <p> &copy; <span id="year"></span> Marcus Lance Boise, ID US</p>
+        <p id="modify"></p>
+    </footer>
+    </div>
+</body>
+
+</html>
