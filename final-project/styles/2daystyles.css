@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1900px;
+
+
+}
+
+:root {
+    --heading-font: "Holtwood One SC", serif;
+    --accent-font: "Rock Salt", cursive;
+    --primary-color: #000179
+        /* dark blue*/
+    ;
+    --secondary-color: #f1ca14
+        /* dark yellow */
+    ;
+    --background-color: #cbcaca
+        /* almost white */
+    ;
+    --accent-color: #0433f9;
+    /* bright blue */
+    --highlight-color: #ffd900;
+    /*bright yellow*/
+
+}
+
+/* logo */
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    /* 1fr for content, auto for footer */
+    height: 100vh;
+    /* Full viewport height */
+}
+
+
+.logo {
+    position: absolute;
+    top: 15%;
+    /* Move down 50% of the viewport height */
+    left: 50%;
+    /* Move right 50% of the viewport width */
+    transform: translate(-50%, -50%);
+    /* Adjust the position to center */
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.sociallinks {
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center items */
+}
+
+.socials {
+    position: absolute;
+    top: 8%;
+    /* Move down 50% of the viewport height */
+    left: 90%;
+    /* Move right 50% of the viewport width */
+    transform: translate(-50%, -50%);
+    /* Adjust the position to center */
+
+
+}
+
+.sociallinks a {
+    margin: 0 10px;
+    /* Space between items */
+}
+
+.menu {
+    position: absolute;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: large;
+
+}
