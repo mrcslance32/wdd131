@@ -85,21 +85,30 @@
 }
 
 .navigation {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center the menu items (optional) */
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center the menu items (optional) */
 }
 
 .navigation li {
-    margin: 0 15px; /* Space between menu items */
+    margin: 0 15px;
+    /* Space between menu items */
 }
 
 .navigation a {
-    text-decoration: none; /* Remove underline */
-    color: black; /* Change text color */
-    font-weight: bold; /* Make text bold (optional) */
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Change text color */
+    font-weight: bold;
+    /* Make text bold (optional) */
     font-family: var(--accent-font);
     color: var(--highlight-color);
     text-shadow:
@@ -107,19 +116,23 @@
         2px 2px #000179,
         3px 3px 5px #000179,
         2px 6px 8px #ffffff;
-        font-size: 30px;
+    font-size: 30px;
 }
 
-.tag{
+.tag {
     position: absolute;
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-shadow:
         1px 1px #ffd900,
-        1px 1px #ffd900,
+        1px 1px #5e5c5c4b,
         1px 2px 6px #ffd900,
-        2px 6px 8px #000000;
-    bottom: 550px;
+        2px 6px 4px #000000,
+        2px 2px 2px #5e5c5c4b,
+        1px 10px 10px #000000de,
+        15px 15px 15px #5e5c5c4b,
+        20px 20px 20px #5e5c5c4b;
+    bottom: 475px;
     left: 660px;
     width: 600px;
     text-align: center;
@@ -163,4 +176,3 @@
     font-size: large;
 
 }
-
