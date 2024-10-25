@@ -5,6 +5,8 @@
     max-width: 1900px;
 
 
+
+
 }
 
 :root {
@@ -47,6 +49,8 @@
     /* Adjust the position to center */
 
 }
+
+
 
 .hero img {
     width: 100%;
@@ -120,7 +124,7 @@
 }
 
 .tag {
-    position: absolute;
+
     font-family: var(--heading-font);
     color: var(--primary-color);
     text-shadow:
@@ -132,15 +136,52 @@
         1px 10px 10px #000000de,
         15px 15px 15px #5e5c5c4b,
         20px 20px 20px #5e5c5c4b;
-    bottom: 475px;
-    left: 660px;
-    width: 600px;
-    text-align: center;
+    grid-row: 1;
     font-size: 20px;
+
+
 
 }
 
+.tag2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-shadow:
+        1px 1px #ffd900,
+        1px 1px #5e5c5c4b,
+        1px 2px 6px #ffd900,
+        2px 6px 4px #000000,
+        2px 2px 2px #5e5c5c4b,
+        1px 10px 10px #000000de,
+        15px 15px 15px #5e5c5c4b,
+        20px 20px 20px #5e5c5c4b;
+    grid-row: 2;
+    font-size: 20px;
+}
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 column */
+    grid-template-rows: repeat(3, auto);
+    /* Two columns */
+    grid-gap: 10px;
+    /* Space between items */
+    position: absolute;
+    /* Position relative to the hero */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for centering */
+    width: 80%;
+    /* Width of the grid */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center text */
+}
 
 
 
