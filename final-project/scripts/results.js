@@ -12,8 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
             resultMessage.textContent = `${song}: ${voteCountDisplay} vote(s)`;
             resultDiv.appendChild(resultMessage);
         }
+    } else {
+        resultDiv.textContent = "No votes have been cast yet.";
     }
 
-    // Optionally clear localStorage after displaying results
-    // localStorage.removeItem('pollVotes');
+    // Optionally clear localStorage if desired
+    localStorage.removeItem('pollVotes');
+    localStorage.removeItem('voteCount');
 });
