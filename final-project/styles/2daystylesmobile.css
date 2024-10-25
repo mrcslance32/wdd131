@@ -1,0 +1,60 @@
+:root {
+    --heading-font: "Holtwood One SC", serif;
+    --accent-font: "Rock Salt", cursive;
+    --primary-color: #000179
+        /* dark blue*/
+    ;
+    --secondary-color: #f1ca14
+        /* dark yellow */
+    ;
+    --background-color: #cbcaca
+        /* almost white */
+    ;
+    --accent-color: #0433f9;
+    /* bright blue */
+    --highlight-color: #ffd900;
+    /*bright yellow*/
+}
+
+
+:root {
+    --heading-font: "Holtwood One SC", serif;
+    --accent-font: "Rock Salt", cursive;
+    --primary-color: #000179;
+    /* dark blue */
+    --secondary-color: #f1ca14;
+    /* dark yellow */
+    --background-color: #cbcaca;
+    /* almost white */
+    --accent-color: #0433f9;
+    /* bright blue */
+    --highlight-color: #ffd900;
+    /* bright yellow */
+}
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px;
+
+}
+
+
+
+
+.hero img {
+    width: 800px;
+    height: auto;
+
+}
+
+
+.logo img {
+    position: relative;
+    width: 350px;
+    bottom: 420px;
+    left: 230px;
+}
