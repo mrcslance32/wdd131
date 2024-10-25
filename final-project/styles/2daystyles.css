@@ -57,6 +57,8 @@
     height: auto;
     display: block;
     margin: 0;
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .sociallinks {
