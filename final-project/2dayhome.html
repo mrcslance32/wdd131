@@ -17,30 +17,26 @@
 
 <body>
     <div class="container">
-        <!-- ----------------------------------------- -->
+        <div class="hero">
+            <img src="images/hero-crop.jpg" alt="Hero Image">
+        </div>
         <header>
-            <!-- logo -->
             <div class="logo">
-                <img src="images/new-logo.png" alt="2-day-logo" width="650">
+                <img src="images/new-logo.png" alt="2-day-logo">
             </div>
-            <!-- social -->
             <div class="socials">
-
                 <nav class="sociallinks">
                     <a href="https://facebook.com">
-                        <img src="images/facebook.png" alt="Facebook" width="50">
+                        <img src="images/facebook.png" alt="Facebook">
                     </a>
                     <a href="https://twitter.com">
-                        <img src="images/twitter.png" alt="Twitter" width="50">
+                        <img src="images/twitter.png" alt="Twitter">
                     </a>
                     <a href="https://instagram.com">
-                        <img src="images/instagram.png" alt="Instagram" width="50">
+                        <img src="images/instagram.png" alt="Instagram">
                     </a>
                 </nav>
             </div>
-
-            <!-- pages       vote for a song????? form????  -->
-
             <div class="menu">
                 <nav>
                     <ul class="navigation">
@@ -49,31 +45,47 @@
                     </ul>
                 </nav>
             </div>
-
         </header>
-        <!-- ------------------------------------------------ -->
-        <main>
-            <div class="hero">
-                <img src="images/hero-crop.jpg" alt="2-day-band">
-                <div class="grid-container">
-                    <div class="tag">Paint your nails black, frost your tips, and break out the Axe Body Spray.  </div>
-                    <div class="tag2">2-Day rental is here to
-                        bring you back to Y2K! </div>
-                    
-                    
-                </div>
 
-         
-            <!-- ------------------------------------------------- -->
+        <main>
+            <div class="flair">
+                <div class="tag">Paint your nails black, frost your tips, and break out the Axe Body Spray. </div>
+                <div class="tag3">With songs from your favorite bands like:</div>
+                <div class="tag4">Panic! At the Disco, Bakstreet Boys, Pearl Jam and more</div>
+                <div class="tag2">2-Day rental is here to bring you back to Y2K! </div>  
+            </div>
+<!-- FORM -->
+            <div class="form">
+                <h2>What is your favorite color?</h2>
+        <form id="pollForm">
+            <div class="poll-option">
+                <input type="radio" id="option1" name="song" value='"This Love" - Maroon 5"'>
+                <label for="option1">"This Love" - Maroon 5</label>
+            </div>
+            <div class="poll-option">
+                <input type="radio" id="option2" name="song" value='"Bodies" - Drowning Pool'>
+                <label for="option2">"Bodies" - Drowning Pool</label>
+            </div>
+            <div class="poll-option">
+                <input type="radio" id="option3" name="song" value='"Higher" - Creed'>
+                <label for="option3">"Higher" - Creed</label>
+            </div>
+            <div class="poll-option">
+                <input type="radio" id="option4" name="song" value='"Forget You" - CeeLo Green'>
+                <label for="option4">"Forget You" - CeeLo Green</label>
+            </div>
+            <button type="submit">Vote</button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </div>
+            </div>
+
         </main>
-        <!-- ------------------------------------------------------ -->
+
+
         <footer class="footer">
-            <p> &copy; <span id="year"></span> Marcus Lance Boise, ID US // 2-Day Rental. All Rights Reserved.</p>
-            <p id="modify"></p>
+            <p>&copy; <span id="year"></span> Marcus Lance Boise, ID US // 2-Day Rental. All Rights Reserved.</p>
         </footer>
-        <!-- ------------------------------------------------------ -->
     </div>
 </body>
-
-
 </html>
