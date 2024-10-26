@@ -1,19 +1,22 @@
 :root {
     --heading-font: "Holtwood One SC", serif;
     --accent-font: "Rock Salt", cursive;
-    --primary-color: #000179
-        /* dark blue*/
-    ;
-    --secondary-color: #f1ca14
-        /* dark yellow */
-    ;
-    --background-color: #cbcaca
-        /* almost white */
-    ;
+    --primary-color: #000179;
+    /* dark blue */
+    --secondary-color: #f1ca14;
+    /* dark yellow */
+    --background-color: #cbcaca;
+    /* almost white */
     --accent-color: #0433f9;
     /* bright blue */
     --highlight-color: #ffd900;
-    /*bright yellow*/
+    /* bright yellow */
+}
+
+body {
+    background: linear-gradient(170deg, #0000FF, #FFD700, #2a1f7d);
+    margin: 0;
+    /* Remove default body margin */
 }
 
 header {
@@ -29,13 +32,17 @@ header {
     /* Add some padding for spacing */
     position: relative;
     /* Allows for absolute positioning of children if needed */
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
 }
 
 .logo img {
     width: 750px;
     /* Adjust size as needed */
-    right: 80px;
-    position: relative;
+    max-width: 100%;
+    /* Ensure logo is responsive */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 .navigation {
@@ -49,23 +56,21 @@ header {
     /* Enable flexbox */
     justify-content: center;
     /* Center the menu items */
+    flex-wrap: wrap;
+    /* Allow menu items to wrap */
 }
 
 .navigation a {
     text-decoration: none;
     /* Remove underline */
-    color: black;
-    /* Change text color */
+    color: var(--highlight-color);
+    /* Use highlight color */
     font-weight: bold;
     /* Make text bold (optional) */
     font-family: var(--accent-font);
-    color: var(--highlight-color);
-    text-shadow:
-        1px 1px #000179,
-        2px 2px #000179,
-        3px 3px 5px #000179,
-        2px 6px 8px #ffffff;
+    text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
     font-size: 50px;
+    /* Font size for desktop */
 }
 
 .navigation li {
@@ -85,32 +90,65 @@ header {
     /* Adjust size of social icons */
     margin: 0 5px;
     /* Space between social icons */
-    position: relative;
-    right: 25px;
 }
-
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     /* 3 columns */
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, minmax(0, 1fr));
     /* 5 rows */
-    gap: 10px;
+    gap: 20px;
     /* Space between grid items */
-    max-width: 800px;
-    /* Set a max width for the grid */
+    max-width: 1600px;
+    /* Adjusted max width for larger images */
     margin: 20px auto;
     /* Center the grid container */
+    align-items: start;
+    /* Align items to the top of the grid cells */
 }
 
 .grid-container img {
     width: 100%;
-    /* Make images responsive */
+    /* Make images fill the grid cell */
+    max-width: 500px;
+    /* Adjust maximum width */
     height: auto;
     /* Maintain aspect ratio */
     border-radius: 8px;
     /* Optional: rounded corners */
     object-fit: cover;
     /* Cover the area without stretching */
+}
+
+@media (max-width: 1400px) {
+    .navigation a {
+        width: 35%;
+        /* Smaller font size for mobile */
+    }
+
+    header {
+        padding: 1px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for mobile */
+        grid-template-rows: repeat(10, minmax(200px, 1fr));
+        /* Adjust rows for smaller screens */
+        max-width: 90%;
+        /* Set max width to 90% for responsiveness */
+        margin: 20px auto;
+        /* Center the grid container */
+    }
+
+    .sociallinks img {
+        width: 50%
+            /* Smaller social icons */
+    }
+
+    .logo img {
+        width: 100%;
+        /* Logo responsive */
+    }
 }

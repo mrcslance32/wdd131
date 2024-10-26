@@ -1,0 +1,77 @@
+:root {
+    --heading-font: "Holtwood One SC", serif;
+    --accent-font: "Rock Salt", cursive;
+    --primary-color: #000179; /* dark blue */
+    --secondary-color: #f1ca14; /* dark yellow */
+    --background-color: #cbcaca; /* almost white */
+    --accent-color: #0433f9; /* bright blue */
+    --highlight-color: #ffd900; /* bright yellow */
+}
+
+body {
+    background: linear-gradient(170deg, #0000FF, #FFD700, #2a1f7d);
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+.logo img {
+    width: 750px;
+    position: relative;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--highlight-color);
+    font-weight: bold;
+    font-family: var(--accent-font);
+    text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
+    font-size: 50px;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.sociallinks {
+    display: flex;
+    align-items: center;
+}
+
+.sociallinks img {
+    width: 75px;
+    margin: 0 5px;
+    position: relative;
+    right: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(8, 1fr); /* Adjust to 8 rows to accommodate all images */
+    gap: 20px; /* Increase space between grid items */
+    max-width: 1600px; /* Adjusted max width for larger images */
+    margin: 20px auto; /* Center the grid container */
+    align-items: start; /* Align items to the start (top) of the grid cells */
+}
+
+.grid-container img {
+    width: 100%; /* Make images fill the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+    object-fit: cover; /* Cover the area without stretching */
+}
