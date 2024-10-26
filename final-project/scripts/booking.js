@@ -6,12 +6,7 @@ if (yearElement) {
     yearElement.textContent = `${currentYear}`;
 }
 
-const lastModifiedDate = document.lastModified;
 
-const modifiedElement = document.getElementById('modify');
-if (modifiedElement) {
-    modifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
-}
 // dates end
 
 
@@ -22,9 +17,15 @@ const products = [
         name: "Yes",
 
     },
+    
     {
         id: "not",
         name: "No",
+
+    },
+    {
+        id: "soon",
+        name: "I will soon!",
 
     }
 
@@ -32,7 +33,7 @@ const products = [
 ];
 
 // new function stuff
-const productSelect = document.getElementById('product');
+const productSelect = document.getElementById('show');
 
 
 products.forEach(product => {

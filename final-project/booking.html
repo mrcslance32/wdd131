@@ -7,11 +7,10 @@
     <title>Marcus Lance | WDD 131| Product Review</title>
     <meta name="description" content="Product review assignment for WDD131 course.">
     <meta name="author" content="Marcus Lance">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/booking.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Slabo+27px&family=Kalam:wght@300;400;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Notable&family=Rock+Salt&display=swap"
         rel="stylesheet">
     <script src="scripts/booking.js" defer></script>
 </head>
@@ -19,17 +18,44 @@
 <body>
 
     <header>
-        <h1>Product Review</h1>
+        <div class="menu">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="2dayhome.html">
+                <img src="images/revision-50.webp" alt="2-day-logo" >
+            </a>
+        </div>
+        <div class="socials">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+        
     </header>
     <main>
         <form method="get" action="booking.html" onsubmit="return handleSubmit(event)">
 
             <!-- Product -->
-            <div class="product">
+            <div class="show">
+                <h1>Book a Show! 🤘</h1>
                 <fieldset>
 
                     <br>
-                    <select name="product" id="product" required>
+                    <select name="show" id="show" required>
                         <option value="" selected disabled>Have you seen a 2-Day show before?</option>
 
                     </select>
@@ -43,19 +69,19 @@
             <!-- features -->
             <div class="feature">
                 <fieldset>
-                    <label>What size capacity is your venue? (check all that apply)</label>
-
+                    <label>What size capacity is your venue? </label>
+            
                     <label>
-                        <input type="checkbox" name="feature" value="durability"> 200-300
-                    </label>
-                    <label>
-                        <input type="checkbox" name="feature" value="use"> 300-400
+                        <input type="radio" name="feature" value="small"> 200-300
                     </label><br>
                     <label>
-                        <input type="checkbox" name="feature" value="performance"> 400-500
+                        <input type="radio" name="feature" value="medium"> 300-400
                     </label><br>
                     <label>
-                        <input type="checkbox" name="feature" value="Design"> 500+ or Festival
+                        <input type="radio" name="feature" value="large"> 400-500
+                    </label><br>
+                    <label>
+                        <input type="radio" name="feature" value="huge"> 500+ or Festival
                     </label><br>
                 </fieldset>
             </div>
@@ -76,7 +102,7 @@
                 <fieldset>
                     <label for="email">Email</label>
                     <br>
-                    <input type="text" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required>
                 </fieldset>
             </div>
             <br>
@@ -85,7 +111,7 @@
                 <fieldset>
                     <label for="phone">Phone Number</label>
                     <br>
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" required>
                 </fieldset>
             </div>
             <br>
@@ -111,7 +137,7 @@
     </main>
 
     <footer class="footer">
-        <p> &copy; <span id="year"></span> Marcus Lance Boise, ID US</p>
+        <p> &copy; <span id="year"></span> Marcus Lance Boise, ID US // 2-Day Rental. All Rights Reserved. 🎸</p>
         <p id="modify"></p>
     </footer>
 

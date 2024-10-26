@@ -50,7 +50,7 @@
 
 }
 .sociallinks img {
-    width: 75px;
+    width: 55px;
     /* Adjust size of social icons */
     margin: 0 15px;
     /* Space between social icons */
@@ -59,7 +59,7 @@
 
 .socials {
     position: relative; /* Change to relative */
-    left: 420px;
+    left: 470px;
     bottom: 475px;
 }
 
