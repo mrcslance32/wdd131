@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Lance | WDD 131| Product Review</title>
+    <meta name="description" content="Product review assignment for WDD131 course.">
+    <meta name="author" content="Marcus Lance">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Slabo+27px&family=Kalam:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/booking.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="booking.html" onsubmit="return handleSubmit(event)">
+
+            <!-- Product -->
+            <div class="product">
+                <fieldset>
+
+                    <br>
+                    <select name="product" id="product" required>
+                        <option value="" selected disabled>Have you seen a 2-Day show before?</option>
+
+                    </select>
+                </fieldset>
+            </div>
+            <br>
+            <!-- rating -->
+
+            <!-- date -->
+
+            <!-- features -->
+            <div class="feature">
+                <fieldset>
+                    <label>What size capacity is your venue? (check all that apply)</label>
+
+                    <label>
+                        <input type="checkbox" name="feature" value="durability"> 200-300
+                    </label>
+                    <label>
+                        <input type="checkbox" name="feature" value="use"> 300-400
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="feature" value="performance"> 400-500
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="feature" value="Design"> 500+ or Festival
+                    </label><br>
+                </fieldset>
+            </div>
+            <br>
+            <!-- written Review -->
+
+            <!-- Name -->
+            <div class="name">
+                <fieldset>
+                    <label for="name">Your name </label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                </fieldset>
+            </div>
+            <br>
+
+            <div class="email">
+                <fieldset>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" id="email" name="email" required>
+                </fieldset>
+            </div>
+            <br>
+
+            <div class="phone">
+                <fieldset>
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="text" id="phone" name="phone" required>
+                </fieldset>
+            </div>
+            <br>
+            <!-- submit -->
+
+            <br>
+            <div class="review">
+                <fieldset>
+                    <label for="review">Anything else we should know before we talk?</label>
+                    <br>
+                    <textarea id="review" name="review" rows="4" cols="50"></textarea>
+                </fieldset>
+            </div>
+            <br>
+            <div class="submit">
+                <input type="submit" class="submit-button" value="Request and Return 🤘 ">
+            </div>
+
+        </form>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <p> &copy; <span id="year"></span> Marcus Lance Boise, ID US</p>
+        <p id="modify"></p>
+    </footer>
+
+</body>
+
+</html>
