@@ -111,7 +111,7 @@ header {
 .grid-container img {
     width: 100%;
     /* Make images fill the grid cell */
-    max-width: 500px;
+
     /* Adjust maximum width */
     height: auto;
     /* Maintain aspect ratio */
@@ -123,32 +123,27 @@ header {
 
 @media (max-width: 1400px) {
     .navigation a {
-        width: 35%;
-        /* Smaller font size for mobile */
-    }
-
-    header {
-        padding: 1px;
+        width: auto;
+        /* Let items size automatically */
+        font-size: 24px;
+        /* Reduce font size for better readability */
     }
 
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns for mobile */
-        grid-template-rows: repeat(10, minmax(200px, 1fr));
-        /* Adjust rows for smaller screens */
-        max-width: 90%;
-        /* Set max width to 90% for responsiveness */
-        margin: 20px auto;
-        /* Center the grid container */
+        /* 2 columns */
+        gap: 10px;
+        /* Reduce gap to minimize space usage */
     }
 
     .sociallinks img {
-        width: 50%
-            /* Smaller social icons */
+        width: 40px;
+        /* Adjust size to reduce load */
     }
 
     .logo img {
-        width: 100%;
-        /* Logo responsive */
+        max-width: 300px;
+        /* Set a maximum width for logo */
+
     }
 }
