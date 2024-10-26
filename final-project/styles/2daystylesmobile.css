@@ -33,28 +33,124 @@
 }
 
 
-
-
 .container {
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
     margin: 0 auto;
-    padding: 0px;
 
 }
 
+.logo img {
+    width: 700px; /* Adjust logo size to 50% */
+    position: relative;
+    padding-top: 300px;
 
+}
+.sociallinks img {
+    width: 75px;
+    /* Adjust size of social icons */
+    margin: 0 15px;
+    /* Space between social icons */
+
+}
+
+.socials {
+    position: relative; /* Change to relative */
+    left: 420px;
+    bottom: 475px;
+}
+
+.sociallinks {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.navigation {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center the menu items */
+    width: 100%; /* Ensure it takes full width */
+}
+
+.navigation a {
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Change text color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    color: var(--highlight-color);
+    text-shadow:
+        1px 1px #000179,
+        2px 2px #000179,
+        3px 3px 5px #000179,
+        2px 6px 8px #ffffff;
+    font-size: 35px;
+}
+
+.navigation li {
+    margin: 0 15px;
+    /* Space between menu items */
+}
+
+.menu {
+    position: relative; /* Change to relative */
+    bottom: 555px;
+    right: 210px; /* Adjust as needed */
+}
+
+header {
+    position: absolute; /* Use absolute positioning to overlay */
+    top: 0; /* Align to the top */
+    z-index: 10; /* Ensure it appears above other content */
+    
+    
+}
 
 
 .hero img {
     width: 800px;
     height: auto;
+    display: block;
+
 
 }
 
 
-.logo img {
-    position: relative;
-    width: 350px;
-    bottom: 420px;
-    left: 230px;
+.hero-2 img {
+    width: 800px;
+    height: auto;
+    display: block; /* Ensures no extra space below the image */
+}
+
+.flair {
+    text-align: center; /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Change text color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    color: var(--highlight-color);
+    text-shadow:
+        1px 1px #000179,
+        2px 2px #000179,
+        3px 3px 5px #000179,
+        2px 6px 8px #ffffff;
+    font-size: 18px;
+    position: absolute;
+    top: 725px;
+   padding-left: 50px;
+    width: 700px;
+   background-color: rgba(0, 0, 0, 0.466);
+   border-radius: 10px;
 }

@@ -169,9 +169,6 @@ main {
 .form {
     text-align: center;
     /* Center the form content */
-    position: relative;
-    top: 60px;
-
 }
 
 body {
@@ -193,13 +190,6 @@ body {
     margin: 10px 0;
 }
 
-.poll-option input {
-    position: relative;
-    /* Ensure input is positioned correctly */
-    z-index: 10;
-    /* Ensure radio buttons are above other elements */
-}
-
 button {
     background-color: #007BFF;
     color: white;
@@ -218,6 +208,9 @@ button:hover {
 }
 
 
+.hero-2 {
+    display: none;
+}
 
 
 

@@ -1,0 +1,116 @@
+:root {
+    --heading-font: "Holtwood One SC", serif;
+    --accent-font: "Rock Salt", cursive;
+    --primary-color: #000179
+        /* dark blue*/
+    ;
+    --secondary-color: #f1ca14
+        /* dark yellow */
+    ;
+    --background-color: #cbcaca
+        /* almost white */
+    ;
+    --accent-color: #0433f9;
+    /* bright blue */
+    --highlight-color: #ffd900;
+    /*bright yellow*/
+}
+
+header {
+    background-color: black;
+    /* Set header background to black */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-between;
+    /* Space out items evenly */
+    padding: 10px;
+    /* Add some padding for spacing */
+    position: relative;
+    /* Allows for absolute positioning of children if needed */
+}
+
+.logo img {
+    width: 750px;
+    /* Adjust size as needed */
+    right: 80px;
+    position: relative;
+}
+
+.navigation {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center the menu items */
+}
+
+.navigation a {
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Change text color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    color: var(--highlight-color);
+    text-shadow:
+        1px 1px #000179,
+        2px 2px #000179,
+        3px 3px 5px #000179,
+        2px 6px 8px #ffffff;
+    font-size: 50px;
+}
+
+.navigation li {
+    margin: 0 15px;
+    /* Space between menu items */
+}
+
+.sociallinks {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.sociallinks img {
+    width: 75px;
+    /* Adjust size of social icons */
+    margin: 0 5px;
+    /* Space between social icons */
+    position: relative;
+    right: 25px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    grid-template-rows: repeat(5, 1fr);
+    /* 5 rows */
+    gap: 10px;
+    /* Space between grid items */
+    max-width: 800px;
+    /* Set a max width for the grid */
+    margin: 20px auto;
+    /* Center the grid container */
+}
+
+.grid-container img {
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    object-fit: cover;
+    /* Cover the area without stretching */
+}

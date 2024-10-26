@@ -20,3 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.removeItem('pollVotes');
     localStorage.removeItem('voteCount');
 });
+
+document.getElementById('submitBtn').addEventListener('click', function() {
+    const songInput = document.getElementById('songSuggestion').value;
+    if (songInput) {
+        alert(`Your song suggestion: "${songInput}" has been submitted!`);
+        // Clear the input field
+        document.getElementById('songSuggestion').value = '';
+    } else {
+        alert('Please enter a song title and artist.');
+    }
+});
