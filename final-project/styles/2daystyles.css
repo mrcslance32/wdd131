@@ -164,11 +164,8 @@ main {
         3px 3px 5px #000179,
         2px 6px 8px #ffffff;
     font-size: 18px;
-}
-
-.form {
-    text-align: center;
-    /* Center the form content */
+    background-color: #3333336a;
+    border-radius: 12px;
 }
 
 body {
@@ -177,31 +174,83 @@ body {
     padding: 20px;
 }
 
-.poll-container {
-    background: white;
+/* poll--------------- */
+
+h1 {
+    text-align: center;
+    /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Change text color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    color: var(--highlight-color);
+    text-shadow:
+        1px 1px #000179,
+        2px 2px #000179,
+        3px 3px 5px #000179,
+        2px 6px 8px #ffffff;
+    font-size: 18px;
+    position: relative;
+    bottom: 30px;
+
+}
+
+.form {
+
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;
+    background-color: #3333336a;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    /* Remove the default border */
+    padding: 0;
+    /* Remove padding */
 }
 
 .poll-option {
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    color: #f1ca14;
 }
+
+
+
+
+label {
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
 
 button {
-    background-color: #007BFF;
+    background-color: var(--secondary-color);
     color: white;
     border: none;
-    padding: 10px 15px;
     border-radius: 5px;
-    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 18px;
+
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    width: 100%;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
+
+
+/* poll end--------------------- */
+
 
 .hidden {
     display: none;

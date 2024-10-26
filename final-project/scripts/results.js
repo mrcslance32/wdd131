@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.removeItem('voteCount');
 });
 
-document.getElementById('submitBtn').addEventListener('click', function() {
+document.getElementById('submitBtn').addEventListener('click', function () {
     const songInput = document.getElementById('songSuggestion').value;
     if (songInput) {
         alert(`Your song suggestion: "${songInput}" has been submitted!`);

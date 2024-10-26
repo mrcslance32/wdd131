@@ -153,4 +153,92 @@ header {
     width: 700px;
    background-color: rgba(0, 0, 0, 0.466);
    border-radius: 10px;
+   
+}
+
+
+
+
+h1{
+    text-align: center;
+    /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Change text color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    color: var(--highlight-color);
+    text-shadow:
+        1px 1px #000179,
+        2px 2px #000179,
+        3px 3px 5px #000179,
+        2px 6px 8px #ffffff;
+    font-size: 18px;
+
+}
+.form {
+   
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none; /* Remove the default border */
+    padding: 0; /* Remove padding */
+}
+
+.poll-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+   color: #f1ca14;
+}
+
+
+
+
+
+label {
+    font-size: 18px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
 }

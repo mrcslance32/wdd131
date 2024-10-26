@@ -36,6 +36,7 @@ document.getElementById("pollForm").addEventListener("submit", function (e) {
 
     e.target.reset();
 
+    // Check if the user has reached the maximum number of votes after incrementing
     if (voteCount >= 3) {
         alert("You have reached the maximum number of votes (3)! Redirecting to the results page.");
         window.location.href = 'results.html';
