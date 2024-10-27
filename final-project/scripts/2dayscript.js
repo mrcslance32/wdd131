@@ -12,7 +12,7 @@ document.getElementById("pollForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
     if (voteCount >= 3) {
-        alert("You have reached the maximum number of votes (3)! Redirecting to the results page.");
+        alert("Thanks for voting! Let's see what you want to hear...");
         window.location.href = 'results.html';
         return;
     }
@@ -36,9 +36,9 @@ document.getElementById("pollForm").addEventListener("submit", function (e) {
 
     e.target.reset();
 
-    // Check if the user has reached the maximum number of votes after incrementing
+    // No need for another check here
     if (voteCount >= 3) {
-        alert("You have reached the maximum number of votes (3)! Redirecting to the results page.");
+        alert("Thanks for voting! Let's see what you want to hear...");
         window.location.href = 'results.html';
     }
 });

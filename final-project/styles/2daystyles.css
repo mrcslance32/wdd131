@@ -173,10 +173,9 @@ body {
     background-color: #f0f0f0;
     padding: 20px;
 }
-
 /* poll--------------- */
 
-h1 {
+h1{
     text-align: center;
     /* Center the text */
     text-decoration: none;
@@ -197,9 +196,8 @@ h1 {
     bottom: 30px;
 
 }
-
 .form {
-
+   
     margin: 0 auto;
     padding: 20px;
     background-color: #3333336a;
@@ -208,10 +206,8 @@ h1 {
 }
 
 fieldset {
-    border: none;
-    /* Remove the default border */
-    padding: 0;
-    /* Remove padding */
+    border: none; /* Remove the default border */
+    padding: 0; /* Remove padding */
 }
 
 .poll-option {
@@ -219,7 +215,7 @@ fieldset {
     align-items: center;
     margin-bottom: 15px;
     position: relative;
-    color: #f1ca14;
+   color: #f1ca14;
 }
 
 
@@ -235,13 +231,25 @@ label {
 
 
 button {
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: rgba(3, 3, 77, 0.516);
+    text-decoration: none;
+    /* Remove underline */
+    color: black;
+    /* Change text color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    color: var(--highlight-color);
+    text-shadow:
+        1px 1px #000179,
+        2px 2px #000179,
+        3px 3px 5px #000179,
+        2px 6px 8px #ffffff;
+    font-size: 35px;
     border: none;
     border-radius: 5px;
     padding: 12px 20px;
-    font-size: 18px;
-
+   
     transition: background-color 0.3s, transform 0.2s;
     margin-top: 20px;
     width: 100%;
