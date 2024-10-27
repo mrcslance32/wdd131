@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             resultDiv.appendChild(resultMessage);
         }
     } else {
-        resultDiv.textContent = "No votes have been cast yet.";
+        resultDiv.textContent = "No votes have been cast yet.🤷";
     }
 
     // Optionally clear localStorage if desired

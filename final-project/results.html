@@ -1,31 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poll Results</title>
+    <title>Marcus Lance | WDD 131| Product Review</title>
+    <meta name="description" content="Product review assignment for WDD131 course.">
+    <meta name="author" content="Marcus Lance">
+    <link rel="stylesheet" href="styles/results.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Notable&family=Rock+Salt&display=swap"
+        rel="stylesheet">
     <script src="scripts/results.js" defer></script>
 </head>
 
 <body>
+<div class="container">
+    <header>
+        <div class="menu">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="2dayhome.html">
+            <img src="images/revision-50.webp" alt="2-day-logo" width="650" height="auto">
+        </a>
+        </div>
+        <div class="socials">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com">
+                    <img src="images/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </nav>
+        </div>
+        
+    </header>
 <main>
+   
+    <div class="totals">
     <h1>Poll Results</h1>
     <div id="result"></div>
-    <a href="2dayhome.html" id="backToPoll">Back to Poll</a>
     <br>
     <fieldset>
-        <legend>Song Suggestion</legend>
-        <label for="songSuggestion">Suggest a song:</label>
+        <legend>Did you have a different song you wanted to hear?</legend>
+        <label for="songSuggestion">Suggest a song....But no Journey!</label>
         <input type="text" id="songSuggestion" name="songSuggestion" placeholder="Enter song title and artist" required>
-        <button type="submit" id="submitBtn">Submit</button>
+        <button type="submit" id="submitBtn">Suggest🎸</button>
     </fieldset>
-
-    <footer class="footer">
-        <p>&copy; <span id="year"></span> Marcus Lance Boise, ID US // 2-Day Rental. All Rights Reserved. 🎸</p>
-    </footer>
+    <br>
+    <a href="2dayhome.html" id="backToPoll">Take me back! 🤘</a>
     </div>
+
+
+    
 </main>
+<footer class="footer">
+    <p>&copy; <span id="year"></span> Marcus Lance Boise, ID US // 2-Day Rental. All Rights Reserved. 🎸</p>
+</footer>
+</div>
+
+
+
+
+</div>
 </body>
 
 </html>

@@ -1,0 +1,208 @@
+:root {
+    --heading-font: "Holtwood One SC", serif;
+    --accent-font: "Rock Salt", cursive;
+    --primary-color: #000179
+        /* dark blue*/
+    ;
+    --secondary-color: #f1ca14
+        /* dark yellow */
+    ;
+    --background-color: #cbcaca
+        /* almost white */
+    ;
+    --accent-color: #0433f9;
+    /* bright blue */
+    --highlight-color: #ffd900;
+    /*bright yellow*/
+}
+
+
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Holtwood One SC', 'Notable', 'Rock Salt', sans-serif;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+
+
+header {
+    background-color: black;
+    /* Set header background to black */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-between;
+    /* Space out items evenly */
+
+    position: relative;
+    /* Allows for absolute positioning of children if needed */
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+
+}
+
+.logo img {
+    width: 650px;
+    /* Adjust size as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+
+    right: 40px;
+    position: relative;
+}
+
+.navigation {
+    list-style-type: none;
+    /* Remove default list styling */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margin */
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center the menu items */
+    flex-wrap: wrap;
+    /* Allow menu items to wrap */
+    position: relative;
+    left: 50px;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    /* Remove underline */
+    color: var(--highlight-color);
+    /* Use highlight color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
+
+    font-size: 36px;
+    /* Reduce font size for navigation links */
+
+    /* Font size for desktop */
+}
+
+.navigation li {
+    margin: 0 15px;
+    /* Space between menu items */
+}
+
+.sociallinks {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    align-items: center;
+    /* Center items vertically */
+    right: 50px;
+    position: relative;
+}
+
+.sociallinks img {
+    width: 75px;
+    /* Adjust size of social icons */
+    margin: 0 15px;
+    /* Space between social icons */
+}
+
+
+/* Main content styles */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #000000;
+    /* Light background for contrast */
+}
+
+.totals {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 200px;
+    /* Adjust as needed */
+}
+
+h1 {
+    text-decoration: none;
+    /* Remove underline */
+    color: var(--highlight-color);
+    /* Use highlight color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
+}
+
+fieldset {
+    border: 5px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background: #f39c12;
+    /* Highlight color on hover */
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+    /* Remove underline */
+    color: var(--highlight-color);
+    /* Use highlight color */
+    font-weight: bold;
+    /* Make text bold (optional) */
+    font-family: var(--accent-font);
+    text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+
+.footer {
+    text-align: center;
+    background-color: #000179;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
