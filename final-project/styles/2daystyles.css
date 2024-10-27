@@ -53,10 +53,7 @@ header {
     /* Ensure it appears above other content */
 }
 
-.logo img {
-    width: 650px;
-    /* Adjust size as needed */
-}
+
 
 .menu {
     position: absolute;
