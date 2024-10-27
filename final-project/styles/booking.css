@@ -20,45 +20,29 @@
 
 header {
     background-color: black;
-    /* Set header background to black */
     display: flex;
-    /* Use flexbox for layout */
     align-items: center;
-    /* Center items vertically */
     justify-content: space-between;
-    /* Space out items evenly */
-
     position: relative;
-    /* Allows for absolute positioning of children if needed */
     flex-wrap: wrap;
-    /* Allow items to wrap on smaller screens */
 
 }
 
 .logo img {
     width: 500px;
-    /* Adjust size as needed */
     max-width: 100%;
-    /* Ensure logo is responsive */
     height: auto;
-    /* Maintain aspect ratio */
     right: 40px;
     position: relative;
 }
 
 .navigation {
     list-style-type: none;
-    /* Remove default list styling */
     padding: 0;
-    /* Remove padding */
     margin: 0;
-    /* Remove margin */
     display: flex;
-    /* Enable flexbox */
     justify-content: center;
-    /* Center the menu items */
     flex-wrap: wrap;
-    /* Allow menu items to wrap */
     position: relative;
     left: 50px;
 
@@ -66,67 +50,50 @@ header {
 
 .navigation a {
     text-decoration: none;
-    /* Remove underline */
     color: var(--highlight-color);
-    /* Use highlight color */
     font-weight: bold;
-    /* Make text bold (optional) */
     font-family: var(--accent-font);
     text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
-
     font-size: 36px;
-    /* Reduce font size for navigation links */
-
-    /* Font size for desktop */
 }
 
 .navigation li {
     margin: 0 15px;
-    /* Space between menu items */
+
 }
 
 .sociallinks {
     display: flex;
-    /* Use flexbox for horizontal alignment */
     align-items: center;
-    /* Center items vertically */
     right: 50px;
     position: relative;
 }
 
 .sociallinks img {
     width: 75px;
-    /* Adjust size of social icons */
     margin: 0 15px;
-    /* Space between social icons */
 }
 
-/* General Styles */
+
 body {
     font-family: var(--heading-font);
     font-weight: 1;
     margin: 0;
     padding: 0;
-
     color: #ffffff;
 }
 
 
-
-/* Header Styles */
 h1 {
     text-align: center;
     text-decoration: none;
-    /* Remove underline */
     color: var(--highlight-color);
-    /* Use highlight color */
     font-weight: bold;
-    /* Make text bold (optional) */
     font-family: var(--accent-font);
     text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
 }
 
-/* Main Styles */
+
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -136,7 +103,7 @@ main {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Fieldset Styles */
+
 fieldset {
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
@@ -144,14 +111,13 @@ fieldset {
     margin-bottom: 20px;
 }
 
-/* Label Styles */
+
 label {
 
     margin-bottom: 10px;
     display: block;
 }
 
-/* Input Styles */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -165,11 +131,9 @@ select {
     font-size: 16px;
 }
 
-/* Submit Button Styles */
+
 .submit-button {
     background-color: #ffffff;
-    /* Bright blue */
-
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -177,11 +141,8 @@ select {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    /* Remove underline */
     color: var(--highlight-color);
-    /* Use highlight color */
     font-weight: bold;
-    /* Make text bold (optional) */
     font-family: var(--accent-font);
     text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
 
@@ -191,20 +152,15 @@ select {
 .submit-button:hover {
     background-color: var(--primary-color);
 
-    /* Bright yellow */
 }
 
 .submit {
     display: flex;
-    /* Enable flexbox */
     justify-content: center;
-    /* Center the button horizontally */
     margin-top: 20px;
-    /* Optional: add some space above */
 
 }
 
-/* Footer Styles */
 .footer {
     text-align: center;
     background-color: #000179;
@@ -230,9 +186,7 @@ select {
 
     .navigation a {
         font-size: 24px;
-        /* Smaller font size for mobile */
         margin: 5px 0;
-        /* Adjust margin for mobile */
     }
 
     main {
@@ -241,7 +195,7 @@ select {
 
     h1 {
         font-size: 24px;
-        /* Smaller heading font for mobile */
+
     }
 
     input[type="text"],
@@ -250,13 +204,11 @@ select {
     textarea,
     select {
         font-size: 14px;
-        /* Smaller font size for inputs */
+
     }
 
     .submit-button {
         width: 100%;
-        /* Make button full-width on mobile */
         font-size: 16px;
-        /* Adjust font size */
     }
 }

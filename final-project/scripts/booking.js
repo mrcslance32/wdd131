@@ -7,10 +7,9 @@ if (yearElement) {
 }
 
 
-// dates end
 
 
-// Names
+
 const products = [
     {
         id: "seen",
@@ -32,7 +31,7 @@ const products = [
 
 ];
 
-// new function stuff
+
 const productSelect = document.getElementById('show');
 
 

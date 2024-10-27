@@ -17,20 +17,6 @@
 }
 
 
-:root {
-    --heading-font: "Holtwood One SC", serif;
-    --accent-font: "Rock Salt", cursive;
-    --primary-color: #000179;
-    /* dark blue */
-    --secondary-color: #f1ca14;
-    /* dark yellow */
-    --background-color: #cbcaca;
-    /* almost white */
-    --accent-color: #0433f9;
-    /* bright blue */
-    --highlight-color: #ffd900;
-    /* bright yellow */
-}
 
 
 .container {
@@ -44,48 +30,42 @@
 }
 
 .logo img {
-    width: 700px; /* Adjust logo size to 50% */
+    width: 700px;
     position: relative;
     padding-top: 300px;
 
 }
+
 .sociallinks img {
     width: 55px;
-    /* Adjust size of social icons */
     margin: 0 15px;
-    /* Space between social icons */
 
 }
 
 .socials {
-    position: relative; /* Change to relative */
+    position: relative;
     left: 470px;
     bottom: 475px;
 }
 
 .sociallinks {
     display: flex;
-    /* Use flexbox for horizontal alignment */
     align-items: center;
-    /* Center items vertically */
 }
 
 .navigation {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Enable flexbox */
-    justify-content: center; /* Center the menu items */
-    width: 100%; /* Ensure it takes full width */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .navigation a {
     text-decoration: none;
-    /* Remove underline */
     color: black;
-    /* Change text color */
     font-weight: bold;
-    /* Make text bold (optional) */
     font-family: var(--accent-font);
     color: var(--highlight-color);
     text-shadow:
@@ -98,21 +78,19 @@
 
 .navigation li {
     margin: 0 15px;
-    /* Space between menu items */
 }
 
 .menu {
-    position: relative; /* Change to relative */
+    position: relative;
     bottom: 555px;
-    right: 210px; /* Adjust as needed */
+    right: 210px;
 }
 
 header {
-    position: absolute; /* Use absolute positioning to overlay */
-    top: 0; /* Align to the top */
-    z-index: 10; /* Ensure it appears above other content */
-    
-    
+    position: absolute;
+    top: 0;
+    z-index: 10;
+
 }
 
 
@@ -128,17 +106,14 @@ header {
 .hero-2 img {
     width: 800px;
     height: auto;
-    display: block; /* Ensures no extra space below the image */
+    display: block;
 }
 
 .flair {
-    text-align: center; /* Center the text */
+    text-align: center;
     text-decoration: none;
-    /* Remove underline */
     color: black;
-    /* Change text color */
     font-weight: bold;
-    /* Make text bold (optional) */
     font-family: var(--accent-font);
     color: var(--highlight-color);
     text-shadow:
@@ -149,25 +124,21 @@ header {
     font-size: 18px;
     position: absolute;
     top: 925px;
-   padding-left: 50px;
+    padding-left: 50px;
     width: 700px;
-   background-color: rgba(0, 0, 0, 0.466);
-   border-radius: 10px;
-   
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
+
 }
 
 
 
 
-h1{
+h1 {
     text-align: center;
-    /* Center the text */
     text-decoration: none;
-    /* Remove underline */
     color: black;
-    /* Change text color */
     font-weight: bold;
-    /* Make text bold (optional) */
     font-family: var(--accent-font);
     color: var(--highlight-color);
     text-shadow:
@@ -178,8 +149,9 @@ h1{
     font-size: 18px;
 
 }
+
 .form {
-   
+
     margin: 0 auto;
     padding: 20px;
     background-color: var(--primary-color);
@@ -188,8 +160,8 @@ h1{
 }
 
 fieldset {
-    border: none; /* Remove the default border */
-    padding: 0; /* Remove padding */
+    border: none;
+    padding: 0;
 }
 
 .poll-option {
@@ -197,7 +169,7 @@ fieldset {
     align-items: center;
     margin-bottom: 15px;
     position: relative;
-   color: #f1ca14;
+    color: #f1ca14;
 }
 
 

@@ -18,7 +18,7 @@
 
 
 
-/* Global styles */
+
 body {
     margin: 0;
     font-family: 'Holtwood One SC', 'Notable', 'Rock Salt', sans-serif;
@@ -32,45 +32,33 @@ body {
     min-height: 100vh;
 }
 
-/* Header styles */
+
 
 
 header {
     background-color: black;
-    /* Set header background to black */
     display: flex;
-    /* Use flexbox for layout */
     align-items: center;
-    /* Center items vertically */
     justify-content: space-between;
-    /* Space out items evenly */
-
     position: relative;
-    /* Allows for absolute positioning of children if needed */
     flex-wrap: wrap;
-    /* Allow items to wrap on smaller screens */
+
 
 }
 
 .logo img {
-   height: auto;
+    height: auto;
     right: 40px;
     position: relative;
 }
 
 .navigation {
     list-style-type: none;
-    /* Remove default list styling */
     padding: 0;
-    /* Remove padding */
     margin: 0;
-    /* Remove margin */
     display: flex;
-    /* Enable flexbox */
     justify-content: center;
-    /* Center the menu items */
     flex-wrap: wrap;
-    /* Allow menu items to wrap */
     position: relative;
     left: 50px;
 
@@ -78,48 +66,37 @@ header {
 
 .navigation a {
     text-decoration: none;
-    /* Remove underline */
     color: var(--highlight-color);
-    /* Use highlight color */
     font-weight: bold;
-    /* Make text bold (optional) */
     font-family: var(--accent-font);
     text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
-
     font-size: 36px;
-    /* Reduce font size for navigation links */
-
-    /* Font size for desktop */
 }
 
 .navigation li {
     margin: 0 15px;
-    /* Space between menu items */
+
 }
 
 .sociallinks {
     display: flex;
-    /* Use flexbox for horizontal alignment */
     align-items: center;
-    /* Center items vertically */
     right: 50px;
     position: relative;
 }
 
 .sociallinks img {
     width: 75px;
-    /* Adjust size of social icons */
     margin: 0 15px;
-    /* Space between social icons */
 }
 
 
-/* Main content styles */
+
 main {
     flex: 1;
     padding: 20px;
     background-color: #000000;
-    /* Light background for contrast */
+
 }
 
 .totals {
@@ -128,16 +105,16 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     min-height: 200px;
-    /* Adjust as needed */
+
 }
 
 h1 {
     text-decoration: none;
-    /* Remove underline */
+
     color: var(--highlight-color);
-    /* Use highlight color */
+
     font-weight: bold;
-    /* Make text bold (optional) */
+
     font-family: var(--accent-font);
     text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
 }
@@ -171,17 +148,15 @@ button {
 
 button:hover {
     background: #f39c12;
-    /* Highlight color on hover */
+
 }
 
 a {
     font-size: 25px;
     text-decoration: none;
-    /* Remove underline */
+
     color: var(--highlight-color);
-    /* Use highlight color */
     font-weight: bold;
-    /* Make text bold (optional) */
     font-family: var(--accent-font);
     text-shadow: 1px 1px #000179, 2px 2px #000179, 3px 3px 5px #000179, 2px 6px 8px #ffffff;
 }
@@ -190,7 +165,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Footer styles */
+
 
 .footer {
     text-align: center;
